@@ -24,27 +24,35 @@ We'll keep talking about dataframes throughout the semester, but there are some 
 Last time, we talked about how you can compute descriptive statistics on specific variables by using `dataframe$name`. what do you do if you don't remember the name of a variable? 
 
 ```{r}
-
+install.packages("palmerpenguins")
+library(palmerpenguins)
+penguins$species
 ```
-
-
 You could print the dataframe repeatedly, but it's tedious. Here are some functions you can use to find the column names:
+```{r}
+penguins
+```
 
 We'll use penguins to learn about: `colnames()`, `names()`, and 0 row
 ```{r}
-
+colnames(penguins)
+#rownames gives row names 
+names(penguins)
 ```
 
 ### editing column names 
 `colnames()` returns all of the column names in a vector. So we can get column names using indexing as well. 
 ```{r}
+colnames(penguins)
+colnames(penguins)[1]<- "Species of penguin"
+colnames(penguins)
 
 ```
 
 It **also** means that you can change names if necessary (when we talk about dataframe manipulation next week, this can become important.)
 `colnames(data)[position]`
 ```{r}
-
+colnames(penguins)[1]<- "species"
 ```
 
 More often than not, we're using datasets that we either created or received from collaborators. That means that you may be dealing with problems **past you** graciously left you, different naming conventions, or even needing to manipulate variables that combine information. We'll talk about how to fix some of the more involved ones next week. For now, ones that may be helpful are making sure your column names are all lower case or all upper case. You can do this with the `toupper()` and `tolower()` functions:
