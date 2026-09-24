@@ -453,6 +453,13 @@ If we wanted to get the same subset of data as above, we could do the
 following:`subset(dataframe, condition)`
 
 ```{r}
+mtcars[mtcars$cyl==6,]
+subset(mtcars, mtcars$cyl==6)
+
+#install.packages("tidyverse")
+library(tidyverse)
+
+mtcars %>% filter(cyl==6)
 
 ```
 
