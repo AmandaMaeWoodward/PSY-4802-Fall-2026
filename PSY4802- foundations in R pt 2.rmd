@@ -58,7 +58,11 @@ colnames(penguins)[1]<- "species"
 More often than not, we're using datasets that we either created or received from collaborators. That means that you may be dealing with problems **past you** graciously left you, different naming conventions, or even needing to manipulate variables that combine information. We'll talk about how to fix some of the more involved ones next week. For now, ones that may be helpful are making sure your column names are all lower case or all upper case. You can do this with the `toupper()` and `tolower()` functions:
 
 ```{r}
+colnames(penguins)<- toupper(colnames(penguins))
+colnames(penguins)
 
+colnames(penguins)<- tolower(colnames(penguins))
+colnames(penguins)
 ```
 
 ### Adding Column Names
@@ -67,36 +71,43 @@ dataframe$newColumn<- whatever you're assigning
 
 For instance, if you want to add a blank column:
 ```{r}
-
+penguins$AmandasFavorite<- NA
 ```
 Then you can fill it with whatever information you want. 
 ```{r}
+penguins$species
 
 ```
 or you can fill the new column in based on other data in the dataframe
 ```{r}
-#chinstrap penguin jump
-
+penguins$AmandasFavorite[penguins$species== "Adelie"]<- "Yes"
+penguins$AmandasFavorite[penguins$species != "Adelie"]<- "No"
 ```
 can do math to fill in the columns
 ```{r}
-
+penguins$BigPenguin<- NA
+#how to make this column indicate penguins are bigger than average
+penguins$BigPenguin[penguins$body_mass_g > mean(penguins$body_mass_g, na.rm=TRUE)]<- "big penguin"
+penguins$BigPenguin[penguins$body_mass_g <= mean(penguins$body_mass_g, na.rm=TRUE)]<- "not so big penguin"
 ```
 
 #### Learning Outcome 1 Practice: 
 
 1. Change all of the column names in mtcars to capital letters
 ```{r}
-
+data(mtcars)
+colnames(mtcars)[1:11]<- c("MPG", "CYL", "DISP", "HP", "DRAT", "WT", "QSEC", "VS", "AM","GEAR", "CARB") 
+colnames(mtcars)<- toupper(colnames(mtcars))
 ```
 2. Change the name of the 9th column to reflect the values in the am column description
 ```{r}
-
+colnames(mtcars)[9]<- "TRANSMISSION"
 ```
 
 3. Change the 4th column name to all lowercase letters 
 ```{r}
-
+colnames(mtcars)[4]<- "hp"
+colnames(mtcars)<- tolower(colnames(mtcars))
 ```
 
 ## Learning Outcome 2: Explain different classes of variables and how to change the class
@@ -116,15 +127,17 @@ We talked about this a little bit last week, but there are different classes (ty
 
 You can check the class of your data using `class()`
 ```{r}
-
+class(penguins$body_mass_g)
 ```
 
 If you want to change the class of your variable, you can assign `as.Preferredclass(dataframe$column)` to the column name
 
 ```{r}
 "is.classname"
-
+is.integer(penguins$body_mass_g)
+is.factor(penguins$body_mass_g)
 "as.classname"
+
 #make a new column 
 
 # going from factor to numeric can cause issues and there's a specific way to do it
