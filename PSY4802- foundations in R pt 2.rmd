@@ -137,30 +137,43 @@ If you want to change the class of your variable, you can assign `as.Preferredcl
 is.integer(penguins$body_mass_g)
 is.factor(penguins$body_mass_g)
 "as.classname"
-
+as.factor(penguins$body_mass_g)
+as.character(penguins$body_mass_g)
 #make a new column 
-
+penguins$species<- as.factor(penguins$species)
+class(penguins$species)
 # going from factor to numeric can cause issues and there's a specific way to do it
 ```
 **DOUBLE CHECK YOUR DATA**
 ```{r}
+penguins$bodyMass2<- as.factor(penguins$body_mass_g)
+penguins$bodyMass2<- as.numeric(penguins$bodyMass2)
 
+library(tidyverse)
+penguins |> select(body_mass_g, bodyMass2)
+
+penguins$bodymass3<- as.factor(penguins$body_mass_g)
+penguins$bodymass3<- as.numeric(levels(penguins$bodymass3)[penguins$bodymass3])
+penguins |> select(body_mass_g,bodymass3)
+
+levels(penguins$species)
 ```
 
 ### Learning Outcome 2 Practice:
 1. Check the class of the horsepower column (hp) 
 ```{r}
-
+class(mtcars$hp)
 ```
 
 2. Change the class of horsepower to a factor
 ```{r}
-
+mtcars$hp2<- as.factor(mtcars$hp)
 ```
 
 3. Look at summaries of horsepower as a factor and as a number. What do you notice? 
 ```{r}
-
+summary(mtcars$hp)
+summary(mtcars$hp2)
 ```
 
 
@@ -179,47 +192,55 @@ You can make a simple function that adds two to a set of numbers
 Before we make the function, we'll make a vector of numbers (1-10) as our input
 
 ```{r}
-
+number<- 1:10
 ```
-
 then, we'll name our function addTwo and give it one argument or input
-
 ```{r}
-
+addTwo<- function(num){
+  num + 2
+}
 ```
 if we run this correctly, it should show up in the environment (top right). 
 
 Then, we can use our function to add two to our vector:
 
 ```{r}
-
+addTwo(3)
+addTwo(number)
 ```
 
 One thing to note- anything you make in a function **stays in the function.** If you want to save it to a dataframe, you treat your new function just like any other R function (i.e. you need to assign the output to a column or variable)
 
 ```{r}
 "dataframe$column <- function"
-
+numDat<- data.frame(number)
+addTwo(num = numDat$number)
+numDat$plusTwo<- addTwo(numDat$number)
 ```
 
 ## Practice:
 function to multiply by 7
 ```{r}
-
+multiplyBy<- function(num){
+  num *7
+}
 ```
 test it out
 ```{r}
-
+multiplyBy(numDat$number)
 ```
 
 Functions w/ characters
 **my favorite is**
 `paste()`
 ```{r}
-
+favoriteFood<- function(food){
+  paste("My favorite food is", food )
+}
 ```
 test
 ```{r}
+favoriteFood("dumplings")
 
 ```
 
