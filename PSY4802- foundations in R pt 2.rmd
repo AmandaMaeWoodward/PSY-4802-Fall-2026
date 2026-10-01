@@ -249,33 +249,43 @@ favoriteFood("dumplings")
 We can make functions with more than one argument. For instance we could multiply all of the numbers in our original vector by a second vector 10-1
 
 ```{r}
-
+multiplyBy<- function(arg1, arg2){
+  arg1*arg2
+}
 ```
 
+create a column in numDat with the numbers 10 - 1
 ```{r}
+numDat$reverseNum <- 10:1
 
+numDat$product<-multiplyBy(numDat$number, numDat$reverseNum)
 ```
 
 ### Learning Outcome 3 Practice
 
 1. Make a function that divides numbers by 100. 
 ```{r}
-
+divideBy<- function(num1){
+  num1/100
+}
 ```
 
 2. Test your function on the mtcars mpg column.
 ```{r}
-
+divideBy(mtcars$mpg)
 ```
 
 3. Make a function that finds the mean of a column and divides it by the standard deviation of another column.
 ```{r}
-
+meanSD<- function(arg1, arg2){
+  mean(arg1)/sd(arg2)
+}
 ```
 
 4. Test it on the mpg column and hp column. 
 ```{r}
-
+data(mtcars)# don't recommend, but easiest
+meanSD(mtcars$mpg, mtcars$hp)
 ```
 
 ## Learning Outcome 4: Create your own for loop
@@ -286,10 +296,13 @@ Let's say we wanted to create a column in the chickweight dataset that indicated
 
 We'd have to make a new column
 ```{r}
-
+data(ChickWeight)
 ```
 and then fill in that new column by indexing the days column, which has 12 different days. 
 ```{r}
+ChickWeight$ChickWeightRange<- NA
+
+ChickWeight$ChickWeightRange[ChickWeight$Chick==1]<- range(ChickWeight$weight[ChickWeight$Chick==1])[2]-range(ChickWeight$weight[ChickWeight$Chick==1])[1] 
 
 ```
 
@@ -309,7 +322,25 @@ think we want to do
 }
 
 ```{r}
+class(ChickWeight$Chick)
+levels(ChickWeight$Chick)
 
+#pause 
+for(i in levels(ChickWeight$Chick)){
+ChickWeight$ChickWeightRange[ChickWeight$Chick==i]<- range(ChickWeight$weight[ChickWeight$Chick==i])[2]-range(ChickWeight$weight[ChickWeight$Chick==i])[1] 
+}
+```
+
+for loops
+```{r}
+for(i in 1:nrow(numDat)){
+  print(i +3)
+}
+
+numDat$plusThree<- NA
+for(i in 1:nrow(numDat)){
+  numDat$plusThree[i]<- numDat$number[i] +3
+}
 ```
 
 ### Practice for Learning Outcome 4: 
