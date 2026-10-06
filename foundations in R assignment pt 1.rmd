@@ -25,6 +25,7 @@ For your first R Assignment, complete the questions below. Remember, weekly assi
 
 # More dataset use
 10. Load the tidyverse library if you haven't already done so.
+11. Load the diamonds dataset.
 12. Create a new dataframe that has diamonds greater than 1 carat and an ideal cut. 
 13. Find the mean and standard deviation of price for this new dataset. 
 14. Create another new dataframe from the original diamonds dataset that includes all diamonds with a price between $2500 and $5000. 
