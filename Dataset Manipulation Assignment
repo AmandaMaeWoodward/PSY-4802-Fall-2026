@@ -1,0 +1,24 @@
+---
+title: "Dataset Manipulation Assignment"
+author: "Amanda Mae Woodward"
+date: "2026-10-07"
+output: html_document
+---
+
+#Part 1
+1.Open the sleep dataset in R 
+2. Is it long or wide format? How do you know? 
+3. Transform this data so that it is in the other format. 
+4. Transform your data back to its original format. 
+5. Open the Starwars dataset
+6. Create homeworld as a factor. How many levels does it have? 
+7. Reorder homeworld so that Naboo is the reference group. 
+8. Use mutate to create a column transforming kg to pounds. (hint: you may need to look up the conversion)
+9. Print a summary of your column from #8
+
+#Part 2
+10. open the billboard dataset.
+11. are the data in this dataframe in long or wide format? explain how you know. 
+12. change the data from its original format to the other version. 
+13. change it from your altered version in #3 back to its original state. 
+14. Separate the date entered column into three columns: one for year, one for month, and one for day. 
