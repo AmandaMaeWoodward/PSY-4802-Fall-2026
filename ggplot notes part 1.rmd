@@ -115,7 +115,9 @@ There are two additional arguments we can use to change the colors; color and fi
 
 Note: color and fill go in the histogram layer
 ```{r}
+ggplot(diamonds, aes(carat))+ geom_histogram(fill="lightcoral", color= "black")+theme_classic()
 
+ggplot(diamonds, aes(carat))+ geom_histogram(fill= "#CC99FF")
 ```
 **Note**You can also put the color and fill arguments in the `aes()` section. As your graphs get more complicated, you will notice that placement matters and will result in slightly different graphs. We're not going to go that far today though.
 
@@ -124,25 +126,22 @@ Note: color and fill go in the histogram layer
 #### Histogram Practice: 
 1. Create a histogram of the bill length variable. 
 ```{r}
-
+ggplot(penguins, aes(bill_length_mm))+geom_histogram()
 
 ```
 2. Include a theme to change the appearance of your graph.
 ```{r}
+ggplot(penguins, aes(bill_length_mm))+geom_histogram()+theme_dark()
 
 ```
 
 3. Create a histogram with orange bars and purple lines. 
 ```{r}
-
+ggplot(penguins, aes(bill_length_mm)) + geom_histogram(fill="sienna1", color="blueviolet")+theme_classic()
 
 ```
 
 4. **Bonus** Create a histogram with the worst color combination you can think of. 
-```{r}
-
-
-```
 
 **Bar graph** 
 Next, we'll talk about how to make a bar graph. We can do this the same way we make a histogram, but will use `geom_bar()`. 
@@ -150,24 +149,19 @@ Next, we'll talk about how to make a bar graph. We can do this the same way we m
 We'll practice on the "clarity" column. (I'll use another theme so you can see the differences)
 
 ```{r}
-
+ggplot(diamonds, aes(clarity))+ geom_bar()
 ```
 
 **Changing the x and y label axes** 
 You'll notice that our y axis is "count" and our x axis is "clarity"s. These are not particularly informative. We can change these using xlab and ylab. 
 ```{r}
-
+ggplot(diamonds, aes(clarity))+geom_bar(fill= "#66CCFF")+ theme_classic()+ xlab("Clarity of Diamonds")+ ylab("Frequency")+ggtitle("Diamonds")
+# \n allows you to add space at the end 
 ```
 
 you can also choose to use labs, with x, y, and title
 ```{r}
-
-
-```
-
-Note - \n- starts a new line 
-```{r}
-
+ggplot(diamonds, aes(clarity))+ geom_bar()+ theme_classic()+ labs(x= "Diamond clarity", y = "Frequency", title= "Diamonds")
 
 ```
 
@@ -175,12 +169,14 @@ Note - \n- starts a new line
 Sometimes, we don't just want the count of a category to make a bar graph. For instance, we may want to use a mean. We can do this by using the summary data frame we made before. 
 
 ```{r}
-
+ggplot(diamondsSummary, aes(color, carat))+ geom_bar(stat="identity", fill="#336699")
+# don't do this without error bars
 ```
 
 **standard errors**
 Using this dataset also allows us to include standard error bars or confidence intervals in our plots. We do this by adding a layer called `geom_errorbar(aes(ymin, ymax))`. 
 ```{r}
+ggplot(diamondsSummary, aes(color, carat))+ geom_bar(stat="identity", fill= "pink",alpha=.5, color="black")+ theme_classic()+ geom_errorbar(aes(ymin = carat- se, ymax = carat+se, width= .3)) 
 
 ```
 
@@ -193,7 +189,7 @@ Things I included:
 
 **adding lines** (hline/vline)
 ```{r}
-
+ggplot(diamondsSummary, aes(color, carat))+ geom_bar(stat="identity")+ geom_errorbar(aes(ymin= carat-se, ymax= carat+se, width=.3))+ geom_hline(yintercept = mean(diamonds$carat), color= "black", linetype = "dashed")+ theme_classic()
 ```
 
 Things I changed: 
