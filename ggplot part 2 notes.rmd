@@ -24,9 +24,13 @@ ggplot(diamonds, aes(color, price, color= cut))+ geom_point()# not super helpful
 ggplot(diamonds, aes(color, price, fill=cut)) + geom_boxplot()
 ```
 
+```{r}
+ggplot(diamonds, aes(color, price, fill=color))+geom_boxplot()+theme(legend.position="none")
+```
+
 We can also change the location: 
 ```{r}
-
+ggplot(diamonds, aes(color, price, fill=color))+geom_boxplot()+theme(legend.position="top")
 ```
 top, left, right, bottom, or none 
 
@@ -35,13 +39,11 @@ To Change the legend title, you can use a couple of different codes, depending o
 `scale_fill_manual(name="Title)` should work for a bar graph filled in by a factor
 `scale_color_continuous()` and `scale_fill_continuous()` should work for a numeric fill
 ```{r}
-
+ggplot(diamonds, aes(color, price, fill=color))+geom_boxplot()+ scale_fill_manual(values= c("red", "orange", "yellow", "green", "blue", "purple", "pink"),name= "Color of Diamonds")
 ```
 
 ### Practice:
-```{r}
 
-```
 
 1) make a graph of bill length and bill depth. Include island as a third variable
 ```{r}
