@@ -1,0 +1,23 @@
+---
+title: "ggplot pt 1 assignment"
+author: "Amanda Mae Woodward"
+date: "2026-10-29"
+output: html_document
+---
+1. open the starwars dataset in tidyverse
+
+2. create a graph showing the frequency of eye colors in the dataset. 
+
+3. Customize your graph to make it more presentable. Consider color, backgrounds, axes, etc. 
+
+4. Create a graph displaying information about character's height in each homeworld. 
+
+5. Customize your graph to make it more presentable. Consider color, backgrounds, axes, etc.
+
+6. Create a graph of character's height by mass. 
+
+7.Customize your graph to make it more presentable. Consider color, backgrounds, axes, etc.
+
+8. Add gender as a third variable to your graph of height by mass. 
+
+9. Customize your graph to make it more presentable. Consider color, backgrounds, axes, etc.

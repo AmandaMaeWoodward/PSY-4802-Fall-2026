@@ -1,0 +1,117 @@
+---
+title: "ggplot part 2"
+author: "Amanda Mae Woodward"
+date: "2026-10-29"
+output: html_document
+---
+
+
+# Learning Outcomes
+By the end of this class, students should be able to: 
+- Explain how to alter information in the legend 
+- Describe how to use facet wrap
+- Explain how to export graphs
+
+
+### Learning Outcome 1: Explain how to alter information in the legend
+It can also be helpful to understand how to modify your legend: 
+`+ theme(legend.position="none")` will remove the legend. You can also choose to move the legend to the top or bottom of the graph
+
+Let's try this on a graph from the diamonds dataset: 
+```{r}
+library(tidyverse)
+ggplot(diamonds, aes(color, price, color= cut))+ geom_point()# not super helpful 
+ggplot(diamonds, aes(color, price, fill=cut)) + geom_boxplot()
+```
+
+We can also change the location: 
+```{r}
+
+```
+top, left, right, bottom, or none 
+
+To Change the legend title, you can use a couple of different codes, depending on the type of data: 
+`scale_color_manual(name="Title")` works for scatter plots filled in with a factor
+`scale_fill_manual(name="Title)` should work for a bar graph filled in by a factor
+`scale_color_continuous()` and `scale_fill_continuous()` should work for a numeric fill
+```{r}
+
+```
+
+### Practice:
+```{r}
+
+```
+
+1) make a graph of bill length and bill depth. Include island as a third variable
+```{r}
+
+```
+
+2) Move the legend to the top of the graph
+```{r}
+
+```
+
+3) Remove the legend from the graph 
+```{r}
+
+```
+
+4) Change the title of the legend
+```{r}
+
+```
+
+5) make a graph of bill length and bill depth. Include flipper length as a third variable
+```{r}
+
+```
+
+### Learning Outcome 2: Describe how to use facet wrap
+Facet Wrap allows us to incorporate a third variable in another way. Specifically, it panels graphs so that we can make an individual graph for each level of a factor.
+
+we need to make a graph and save it 
+```{r}
+ggplot(diamonds, aes(color, price, color= cut))+ geom_point()
+
+
+```
+
+```{r}
+
+```
+
+### change labels on the axes
+change levels beforehand
+```{r}
+
+```
+
+make a vector called labels. use `labeller=as_labeller())` in `facet_wrap()`
+```{r}
+
+```
+
+### Practice: 
+1) create a facet wrap graph to generate a scatterplot of mpg and hp based on the number of cylinders a car has
+```{r}
+
+```
+
+### Learning Outcome 3: Explain how to export graphs
+to export graphs, I use the command `ggsave()`
+Specifically, you can use the following arguments: 
+`ggsave("name of graph", width, height, units, dpi)`
+I don't usually specify a path in ggsave, but make sure my r code is in the directory I'd like it to be saved in. you can check your working directory by using this code
+```{r}
+
+```
+make a graph to save
+```{r}
+ 
+```
+you can change your working directory using this code: 
+```{r}
+
+```

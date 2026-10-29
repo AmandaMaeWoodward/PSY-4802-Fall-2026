@@ -300,23 +300,21 @@ ggplot(diamonds, aes(x= cut, y= price))+ geom_boxplot()
 ggplot(diamonds, aes(cut, price))+ geom_violin(fill="aquamarine", color= "cadetblue")#+geom_jitter(color="navyblue", alpha=.1)
 ```
 
-```{r}
-
-```
-
 ### Practice: 
 1. Create a boxplot for flipper length.
 ```{r}
-
+ggplot(penguins, aes(flipper_length_mm))+ geom_boxplot()
 ```
 
 2. Create boxplots of flipper length for each species.
 ```{r}
+ggplot(penguins, aes(species, flipper_length_mm))+ geom_boxplot()
 
 ```
 
 3. **Bonus** play around with fill and color. What changes about your boxplots? 
 ```{r}
+ggplot(penguins, aes(species, flipper_length_mm))+ geom_boxplot(fill= "yellow", color="black")+ theme_classic()+ ggtitle(label = "Species flipper length")
 
 ```
 
@@ -327,14 +325,14 @@ For histograms/bar graphs:
 use fill = 
 price histogram, how i can add color as another variable? 
 ```{r}
-
+ggplot(diamonds, aes(carat))+ geom_histogram(fill= "orange")
 ```
 
 For scatter plots: 
 color = 
 for scatterplot of price, carat, how can I add cut as another variable?
 ```{r}
-
+ggplot(diamonds, aes(price, carat))+geom_point(color= "black")
 ```
 
 Rather than having all bars/dots/lines the same color, you can have them change by using various packages and by looking up a few color codes online. 
@@ -343,24 +341,29 @@ If you don't like the colors, we can specify specific ones using `scale_fill_man
 (need to specify option for color scales)
 We'll walk through these together because I think it's helpful to see what color combinations exist and how you can use them in a bar graph or a scatter plot.
 ```{r}
-
+ggplot(mtcars, aes(as.factor(gear), fill= as.factor(gear)))+geom_bar(color="black")+scale_fill_manual(values = c("#FFCC99","#FFFFCC", "#CCCCFF"))+ theme_classic()
 ```
 `scale_color_manual(values = #)`; 
 ```{r}
-
+ggplot(mtcars, aes(mpg, hp, color=as.factor(gear)))+ geom_point()+scale_color_manual(values = c("#FFCC99","#FFFFCC", "#CCCCFF"))+ theme_classic()
 ```
 
 R ColorBrewer
 `scale_color_brewer(palette=)`
 ```{r}
+library(RColorBrewer)
+ggplot(diamonds, aes(carat, fill=cut))+ geom_histogram()+ scale_fill_brewer(palette= "Blues")
 
+ggplot(diamonds, aes(carat, price, color    =cut))+geom_point()+scale_color_brewer(palette= "Purples")
 ```
 
 Viridis
 `scale_color_viridis()`
 ```{r}
+library(viridis)
+ggplot(diamonds, aes(carat, fill=cut))+ geom_histogram(position=position_dodge())+ scale_fill_viridis(option="inferno", discrete=TRUE)
 
-
+ggplot(diamonds, aes(carat, price, color=cut))+ geom_point()+ scale_color_viridis(discrete=TRUE, option="magma")
 ```
 
 
