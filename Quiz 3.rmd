@@ -1,0 +1,62 @@
+---
+title: "Quiz 3"
+author: "Amanda Mae Woodward"
+date: "2025-10-30"
+output: html_document
+---
+1. Load the spotify dataset (available in github repository).
+```{r}
+
+```
+
+2. Create a bar graph of the artist column (Hint: use theme(axis.text.x = element_text(angle = 90)) to rotate the x axis).
+```{r}
+
+```
+
+3. Add genre as a third variable in your graph.
+```{r}
+
+```
+
+4. Use color brewer to add color to your graph in 3. 
+```{r}
+
+```
+
+5. Place the legend for the graph you made in 3 on the bottom of the graph. 
+```{r}
+
+```
+
+As you probably recognized, the graph you made is really hard to read.
+
+6. Separate the genre column into multiple columns (e.g. so each genre listed is in a unique column)
+```{r}
+
+```
+
+7. Use these genre columns to create a dataset in long format. 
+```{r}
+
+```
+
+8.use facet wrap to make graphs of artist by genre 
+```{r}
+
+```
+
+9. Create a graph that includes the variables tempo and dancability. 
+```{r}
+
+```
+
+10. Add popularity as a third variable. 
+```{r}
+
+```
+
+11. Use viridis as a color in your graph from #10
+```{r}
+
+```
