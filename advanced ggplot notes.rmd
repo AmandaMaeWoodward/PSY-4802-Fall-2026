@@ -18,7 +18,7 @@ today we'll use the penguins dataset
 
 #load dataset
 ```{r}
-
+library(palmerpenguins)
 ```
 
 #### Categorical variable x categorical variable
@@ -26,7 +26,7 @@ In the case where we have two categorical predictors, there are a few options we
 
 load tidyverse
 ```{r}
-
+library(tidyverse)
 ```
 
 What are interactions? 
@@ -42,17 +42,20 @@ categorical variables
 predict flipper length with species and sex
 
 ```{r}
-
+data(penguins)
+lm(flipper_length_mm~ species + sex+ sepcies:sex, data=penguins)
+lm1<- lm(flipper_length_mm ~ species *sex, data=penguins)
+summary(lm1)
 ```
 use this output to create a graph 
 
 ```{r}
-
+ggplot(penguins, aes(species, flipper_length_mm, fill= sex))+geom_boxplot()
 ```
 
 Alternatively, could use facet wrap with boxplots
 ```{r}
-
+ggplot(penguins, aes(species, flipper_length_mm))+geom_boxplot()+facet_wrap(~sex)
 ```
 
 Finally, could use ggeffects package. Need to load the library
@@ -62,7 +65,8 @@ library(ggeffects)
 
 Then, you can use the `ggpredict(model, terms = effects)` function to get predictions. We save these, and then use the `plot()` function to create an interaction plot
 ```{r}
-
+a<- ggpredict(lm1, terms= c("species", "sex"))
+plot(a)
 ```
 
 #### Categorical variable x continuous variable

@@ -1,0 +1,585 @@
+Participant,stressLevel,cortisolLevel,depressionScore,anxietyScore,sleepQuality,physicalActivity,dietQuality,socialSupport,relationshipStatus,substanceUse,counselingServiceUse,familyHistory,financialStability,extracurricularInvolvement,creditLoad
+1,3,15,3,2,Good,Moderate,Good,Moderate,Married,Never,Never,No,2,Moderate,17
+2,0,18,3,0,Average,Low,Average,Low,Single,Occasionally,Occasionally,No,3,Low,27
+3,4,18,0,3,Good,Low,Average,Moderate,In a Relationship,Never,Occasionally,No,4,High,15
+4,2,6,1,0,Average,Low,Average,Moderate,Single,,Never,No,4,Moderate,20
+5,3,17,3,4,Good,Low,Average,High,Married,Never,Never,No,0,High,23
+6,2,23,4,3,Good,Moderate,Good,High,Single,Never,Never,No,5,Moderate,19
+7,2,25,2,5,Good,Moderate,Average,Moderate,Single,Never,Never,No,4,Moderate,20
+8,0,13,3,3,Average,Low,Average,Low,Married,Never,Never,Yes,3,Moderate,23
+9,3,10,2,1,Poor,Low,Average,Moderate,Single,Frequently,Never,Yes,2,Low,28
+10,2,6,5,0,Average,Moderate,Good,Low,In a Relationship,,Occasionally,Yes,1,Moderate,27
+11,3,14,2,4,Average,Low,Good,Moderate,In a Relationship,,Occasionally,No,3,Moderate,22
+12,3,6,0,3,Average,Moderate,Average,Moderate,In a Relationship,Never,Occasionally,Yes,0,Moderate,20
+13,1,21,1,3,Average,Moderate,Average,Moderate,In a Relationship,Never,Occasionally,No,1,High,17
+14,3,6,2,2,Average,Moderate,Average,High,In a Relationship,Never,Occasionally,No,1,Moderate,17
+15,3,5,0,3,Average,Low,Poor,Moderate,Single,Never,Occasionally,No,2,Moderate,18
+16,3,6,1,5,Good,Low,Average,Moderate,In a Relationship,Never,Never,Yes,4,Moderate,25
+17,4,10,1,3,Good,Low,Average,Moderate,Married,Never,Never,Yes,1,Moderate,23
+18,5,25,1,1,Good,Low,Average,High,Single,Never,Never,Yes,4,Moderate,29
+19,3,23,1,0,Good,Moderate,Average,Moderate,In a Relationship,Never,Frequently,No,4,High,29
+20,2,23,2,2,Good,High,Average,Low,Single,Occasionally,Never,No,3,Low,16
+21,5,11,3,2,Average,Moderate,Average,Low,Single,Never,Never,No,4,Low,22
+22,1,20,3,2,Good,High,Good,High,Single,Never,Never,Yes,4,Moderate,17
+23,4,11,5,2,Average,Moderate,Average,High,Single,Never,Occasionally,No,3,High,17
+24,2,7,0,5,Good,Low,Average,Low,Single,Never,Never,No,2,Low,25
+25,0,22,0,3,Average,Moderate,Poor,Low,Single,Never,Never,Yes,4,Low,16
+26,5,24,1,3,Good,Moderate,Average,High,In a Relationship,,Never,No,2,Low,22
+27,5,9,5,4,Good,High,Average,High,In a Relationship,Never,Never,Yes,3,Moderate,29
+28,3,13,1,3,Good,Moderate,Average,Moderate,Single,Never,Never,Yes,5,Low,27
+29,3,23,1,2,Good,Moderate,Average,Moderate,In a Relationship,Never,Never,No,4,Moderate,18
+30,3,9,2,1,Average,High,Average,Moderate,Single,Never,Frequently,Yes,5,Low,24
+31,2,21,1,5,Good,Low,Average,Moderate,Single,Never,Never,No,3,Low,21
+32,3,22,1,2,Good,Moderate,Average,High,Single,Never,Never,No,3,Low,22
+33,3,7,0,4,Average,Low,Good,Moderate,Single,Never,Never,No,0,Moderate,16
+34,2,21,3,2,Average,Low,Poor,High,Single,Never,Occasionally,No,2,Moderate,29
+35,4,5,1,3,Good,High,Average,Moderate,Single,Never,Occasionally,No,5,Moderate,28
+36,3,24,1,1,Average,High,Average,Low,In a Relationship,Never,Frequently,Yes,1,Low,15
+37,4,9,0,5,Good,Moderate,Average,High,Married,Never,Occasionally,No,2,Low,19
+38,3,19,3,4,Average,Moderate,Average,Moderate,Single,Never,Never,Yes,1,Low,23
+39,0,14,3,3,Average,Moderate,Average,Moderate,Single,Never,Occasionally,No,0,Low,18
+40,2,18,5,1,Good,Moderate,Average,Low,Single,Never,Never,Yes,0,Moderate,19
+41,5,20,5,3,Good,Moderate,Average,Moderate,Married,Never,Never,No,5,Low,22
+42,5,20,3,3,Good,High,Average,High,Single,Occasionally,Occasionally,No,2,High,29
+43,3,6,3,0,Good,Moderate,Good,Moderate,In a Relationship,Never,Never,No,1,Moderate,26
+44,5,6,0,1,Good,Low,Poor,Moderate,Single,Occasionally,Never,No,3,Low,29
+45,2,13,1,4,Good,Moderate,Average,Moderate,In a Relationship,Never,Never,No,2,Low,18
+46,4,12,4,1,Average,Moderate,Good,High,In a Relationship,Never,Never,No,2,Low,18
+47,2,21,0,4,Good,Low,Poor,Low,Single,Never,Occasionally,Yes,0,Low,25
+48,3,25,4,4,Good,Low,Average,Low,In a Relationship,Never,Never,No,1,Moderate,19
+49,3,19,1,1,Good,Low,Average,Moderate,Married,Never,Never,No,2,Moderate,25
+50,5,5,0,0,Good,Moderate,Average,High,Single,Never,Never,Yes,0,Moderate,18
+51,1,22,2,2,Good,Moderate,Poor,Moderate,In a Relationship,Never,Never,Yes,3,High,24
+52,0,7,0,0,Good,Moderate,Average,High,Married,Never,Occasionally,Yes,5,Low,22
+53,4,23,1,0,Average,Moderate,Poor,Moderate,Single,Never,Occasionally,Yes,0,Moderate,21
+54,2,25,5,0,Average,Low,Average,High,In a Relationship,Frequently,Never,No,4,Moderate,23
+55,4,13,4,1,Average,Moderate,Good,High,Single,Never,Never,Yes,4,Low,27
+56,0,6,1,2,Average,Low,Average,Low,Single,Never,Never,No,4,High,28
+57,3,5,2,1,Good,Moderate,Poor,Moderate,In a Relationship,,Never,No,0,Moderate,25
+58,0,23,5,2,Average,Moderate,Good,Moderate,Single,Never,Never,Yes,0,Low,24
+59,5,7,5,4,Good,Moderate,Average,Moderate,Married,Never,Never,No,0,Moderate,20
+60,5,23,4,3,Good,Moderate,Average,Moderate,Married,Never,Frequently,No,1,Moderate,26
+61,3,14,1,3,Good,Low,Good,Moderate,Married,,Never,No,2,Moderate,24
+62,1,10,5,5,Poor,Moderate,Average,High,Single,Never,Never,No,1,High,29
+63,2,19,3,3,Average,Low,Poor,Low,Married,Never,Occasionally,Yes,5,Low,24
+64,3,25,2,0,Good,Low,Average,Low,Single,Never,Never,No,4,Low,29
+65,4,9,4,2,Average,High,Average,High,Single,Never,Occasionally,No,2,Moderate,25
+66,4,13,0,0,Good,Low,Average,High,Single,Frequently,Occasionally,No,4,High,24
+67,3,24,3,3,Average,Moderate,Good,Moderate,Single,Never,Never,No,0,Moderate,28
+68,0,21,4,2,Good,High,Poor,Moderate,In a Relationship,Never,Never,No,1,Moderate,16
+69,2,24,1,0,Poor,Low,Average,High,Single,Never,Never,Yes,4,Low,17
+70,4,15,0,4,Good,High,Average,Moderate,In a Relationship,Never,Never,No,5,Moderate,24
+71,2,5,5,4,Average,Moderate,Average,Moderate,Single,Never,Never,No,0,Low,19
+72,0,18,4,0,Average,High,Average,Low,Married,Occasionally,Never,No,4,Low,25
+73,3,14,1,1,Good,Low,Average,Moderate,Single,Never,Never,No,0,High,24
+74,2,6,1,5,Good,Moderate,Average,Moderate,In a Relationship,Never,Occasionally,No,4,Low,21
+75,1,12,4,1,Poor,Low,Good,High,In a Relationship,Occasionally,Never,No,2,Moderate,27
+76,3,14,4,0,Good,High,Poor,Moderate,Single,Never,Occasionally,No,1,Moderate,21
+77,1,23,2,2,Good,High,Average,Moderate,Single,Never,Never,No,2,Low,22
+78,1,24,5,2,Poor,Moderate,Average,Low,Married,Never,Frequently,Yes,4,Moderate,29
+79,2,18,1,4,Average,Moderate,Average,High,Single,Never,Never,Yes,3,Moderate,23
+80,2,22,5,0,Good,Moderate,Average,Moderate,Single,Never,Never,No,0,Moderate,18
+81,1,14,5,5,Average,Moderate,Average,Moderate,Married,Occasionally,Never,No,0,High,19
+82,0,12,1,4,Good,Moderate,Average,Moderate,Married,Occasionally,Never,Yes,4,Low,21
+83,5,11,3,4,Good,Moderate,Average,Moderate,Single,Never,Never,No,1,High,25
+84,1,12,2,4,Good,Low,Average,Moderate,In a Relationship,Never,Never,Yes,3,Low,27
+85,1,10,4,4,Good,Low,Poor,Low,Single,Never,Occasionally,No,4,Moderate,28
+86,2,15,2,4,Average,High,Poor,High,Single,Never,Occasionally,No,2,Moderate,20
+87,2,5,0,5,Good,Low,Good,High,Single,Never,Never,No,4,Low,26
+88,0,24,4,3,Average,Low,Good,Low,Single,Never,Never,Yes,4,Low,21
+89,0,5,3,3,Good,Moderate,Average,High,In a Relationship,Never,Never,No,5,High,21
+90,1,21,4,0,Poor,Moderate,Poor,Low,Single,Never,Frequently,No,5,Low,28
+91,1,8,3,0,Average,High,Average,Moderate,Single,Never,Never,No,2,Moderate,24
+92,0,20,5,0,Good,Moderate,Average,High,Single,Never,Never,No,3,High,17
+93,5,18,1,4,Good,Moderate,Average,High,In a Relationship,Never,Never,No,3,Low,25
+94,3,12,2,2,Good,Low,Poor,Moderate,In a Relationship,Never,Never,Yes,5,Low,28
+95,4,5,0,2,Average,Low,Average,Low,Single,Never,Occasionally,No,1,High,27
+96,1,11,1,2,Poor,Low,Poor,Moderate,Married,Never,Never,No,4,Moderate,15
+97,1,18,0,4,Average,Low,Poor,Moderate,In a Relationship,Never,Never,No,5,Low,24
+98,2,16,2,4,Average,Moderate,Poor,Moderate,Married,Never,Occasionally,Yes,2,Low,28
+99,2,20,1,2,Average,Moderate,Average,Low,Single,Never,Never,No,0,Low,17
+100,5,15,5,1,Average,Moderate,Poor,Moderate,Single,Never,Never,No,0,Low,25
+101,5,25,4,3,Good,Moderate,Poor,High,Single,Never,Never,Yes,4,Moderate,21
+102,4,11,2,2,Average,Low,Good,Low,Single,Never,Never,No,3,Low,24
+103,3,8,2,4,Average,Moderate,Average,Low,Single,Never,Frequently,No,5,High,24
+104,2,8,2,3,Average,High,Good,Low,Married,Never,Occasionally,No,3,Low,21
+105,5,20,0,3,Good,Moderate,Poor,Moderate,Married,Never,Occasionally,No,3,Low,21
+106,2,20,2,4,Poor,Moderate,Average,Moderate,Single,Never,Never,No,2,Low,29
+107,4,22,0,4,Good,Low,Average,Moderate,In a Relationship,Never,Occasionally,No,1,High,15
+108,4,20,2,1,Good,Low,Poor,High,Married,Never,Occasionally,No,0,Moderate,27
+109,5,20,0,4,Average,High,Poor,Moderate,Single,Never,Occasionally,Yes,4,Low,26
+110,1,11,1,3,Poor,Moderate,Average,Moderate,Single,Never,Never,Yes,5,Moderate,23
+111,3,21,4,1,Good,High,Average,Moderate,In a Relationship,Never,Never,No,5,Low,18
+112,5,6,4,1,Good,Moderate,Average,Moderate,Single,Never,Occasionally,No,4,Moderate,21
+113,0,15,1,2,Good,High,Average,Low,In a Relationship,Frequently,Occasionally,No,1,Low,22
+114,2,19,5,1,Good,Moderate,Average,High,Married,Never,Occasionally,No,0,Moderate,27
+115,1,7,2,4,Average,Moderate,Good,Moderate,Single,Never,Never,Yes,0,Moderate,25
+116,4,8,4,2,Good,Moderate,Good,Low,In a Relationship,Never,Never,No,2,Moderate,28
+117,2,12,5,3,Average,Moderate,Good,Moderate,In a Relationship,Never,Never,No,4,Moderate,26
+118,2,14,5,3,Average,Moderate,Average,Moderate,Single,Never,Frequently,No,5,High,29
+119,0,19,3,0,Good,High,Good,High,Married,Never,Never,No,0,Moderate,16
+120,1,7,4,0,Poor,High,Good,Moderate,Married,Never,Occasionally,No,3,High,28
+121,4,14,1,2,Good,Low,Average,High,In a Relationship,Occasionally,Never,No,4,Moderate,28
+122,0,15,3,1,Good,Low,Average,Low,In a Relationship,Never,Never,No,3,Moderate,26
+123,4,23,4,0,Good,Moderate,Good,High,Single,Never,Frequently,Yes,1,Low,22
+124,4,23,1,2,Average,Low,Good,Moderate,Single,Never,Frequently,No,1,Moderate,29
+125,0,6,4,2,Good,Moderate,Average,Moderate,Married,Never,Frequently,Yes,1,Moderate,28
+126,2,15,3,1,Average,Moderate,Average,Moderate,In a Relationship,Never,Occasionally,Yes,1,Low,28
+127,2,7,0,3,Good,Moderate,Average,Moderate,In a Relationship,Never,Never,No,1,Moderate,21
+128,5,8,1,3,Average,High,Average,High,In a Relationship,Occasionally,Occasionally,Yes,0,Low,27
+129,0,9,1,0,Average,Low,Average,High,In a Relationship,Never,Occasionally,Yes,2,Moderate,25
+130,2,12,3,5,Good,Moderate,Good,Moderate,Single,Never,Never,Yes,4,Low,29
+131,0,8,3,2,Good,Moderate,Average,Moderate,In a Relationship,Occasionally,Never,Yes,2,High,16
+132,3,20,1,4,Average,Moderate,Average,Low,Single,Never,Never,No,0,Low,17
+133,1,5,5,2,Good,Low,Average,Moderate,Single,Occasionally,Never,No,3,High,22
+134,1,15,1,2,Average,Moderate,Average,Moderate,Married,Never,Never,Yes,2,High,26
+135,3,16,0,5,Good,Low,Average,Low,Married,Never,Never,No,0,Moderate,17
+136,5,20,2,0,Average,Moderate,Good,Moderate,In a Relationship,Never,Never,No,4,High,27
+137,3,25,5,2,Average,Moderate,Average,Low,Single,Never,Occasionally,No,3,Low,28
+138,1,25,5,4,Average,Moderate,Average,Low,Married,Never,Frequently,No,5,Low,29
+139,2,25,5,0,Average,Low,Average,Moderate,Single,Occasionally,Never,No,3,Moderate,25
+140,3,9,3,2,Good,Moderate,Good,High,Single,Occasionally,Occasionally,No,2,Moderate,26
+141,5,22,0,5,Average,Moderate,Average,High,Single,Never,Never,Yes,2,Low,29
+142,1,5,3,3,Good,High,Good,Moderate,Married,Occasionally,Occasionally,Yes,4,Moderate,15
+143,3,16,0,5,Average,Low,Average,Low,Married,Never,Never,No,5,Moderate,20
+144,0,9,0,4,Good,Low,Average,High,Single,Never,Occasionally,No,1,Low,20
+145,3,21,4,2,Average,High,Average,Low,Single,Never,Never,Yes,2,Moderate,16
+146,1,24,2,1,Poor,Moderate,Average,Moderate,Married,Never,Never,No,5,High,22
+147,2,8,0,3,Good,Moderate,Average,Moderate,Single,Never,Never,Yes,4,High,19
+148,4,25,4,1,Average,Moderate,Good,Moderate,Married,Never,Never,No,5,High,26
+149,2,24,4,3,Good,Low,Average,High,Single,Never,Never,No,3,High,29
+150,4,15,1,2,Good,High,Average,Moderate,Single,Frequently,Never,No,0,Low,23
+151,1,17,1,2,Good,Moderate,Good,Low,Single,Occasionally,Never,Yes,5,High,16
+152,4,9,5,3,Average,Moderate,Average,Moderate,Single,Frequently,Occasionally,Yes,0,Moderate,27
+153,0,15,3,5,Average,Low,Average,Moderate,Single,Never,Never,Yes,3,Moderate,29
+154,5,12,1,2,Average,Low,Average,Moderate,Single,Never,Never,No,1,Low,15
+155,1,24,2,1,Good,Low,Average,Moderate,Married,Never,Never,No,5,High,18
+156,0,21,4,3,Good,Moderate,Average,Low,In a Relationship,Never,Never,No,1,Low,22
+157,1,8,3,1,Average,Moderate,Poor,Low,Single,Occasionally,Never,No,5,High,24
+158,0,15,2,2,Average,High,Poor,Moderate,Married,Never,Occasionally,No,1,Moderate,26
+159,5,5,1,2,Average,Low,Average,Low,Single,Occasionally,Occasionally,No,0,Moderate,27
+160,1,19,5,0,Average,High,Poor,High,Single,Never,Never,Yes,3,Moderate,23
+161,2,6,1,4,Good,Moderate,Average,Moderate,Single,Occasionally,Occasionally,No,0,Moderate,20
+162,0,10,2,3,Average,Low,Average,High,Married,Never,Never,No,0,Moderate,16
+163,0,14,5,3,Average,Moderate,Average,Moderate,Single,Never,Occasionally,Yes,5,Moderate,27
+164,3,10,1,0,Good,Low,Good,Moderate,In a Relationship,Never,Never,Yes,5,Low,23
+165,2,16,1,0,Average,High,Poor,Moderate,Single,Never,Occasionally,No,5,Moderate,28
+166,1,15,0,4,Average,Moderate,Average,Moderate,In a Relationship,Never,Occasionally,No,5,Moderate,26
+167,3,11,5,2,Average,Low,Poor,Moderate,Single,Never,Never,Yes,4,Moderate,24
+168,1,10,5,3,Average,Low,Average,High,Single,Occasionally,Frequently,No,1,Moderate,21
+169,1,25,3,5,Good,Low,Good,Low,Married,Frequently,Never,No,2,Moderate,16
+170,2,12,5,4,Average,Low,Poor,Low,In a Relationship,Never,Occasionally,No,0,Moderate,23
+171,5,17,1,4,Good,Moderate,Average,Low,Single,Frequently,Frequently,Yes,0,Low,25
+172,5,14,3,3,Average,High,Poor,Moderate,Single,Occasionally,Never,No,0,Low,20
+173,4,24,3,5,Poor,Low,Average,Moderate,Single,Never,Never,No,0,Moderate,23
+174,4,19,5,1,Average,Moderate,Good,High,Single,Never,Never,No,1,Moderate,29
+175,1,23,3,5,Good,Moderate,Poor,Moderate,In a Relationship,Occasionally,Never,No,0,Moderate,25
+176,5,25,3,2,Good,Low,Average,Low,Married,Never,Never,No,2,Moderate,23
+177,4,10,2,0,Average,Low,Average,High,Single,Occasionally,Frequently,No,0,Moderate,29
+178,3,10,0,3,Average,Moderate,Good,Moderate,Married,Never,Occasionally,No,1,Moderate,29
+179,4,24,2,2,Good,Low,Average,High,In a Relationship,Never,Never,No,0,Low,28
+180,2,14,3,5,Average,High,Good,Moderate,Single,Never,Occasionally,No,4,Moderate,29
+181,3,10,3,1,Average,Moderate,Average,Low,Single,Never,Never,Yes,4,Moderate,25
+182,4,7,1,4,Poor,Moderate,Average,High,Single,Never,Never,No,5,Low,23
+183,1,12,1,2,Average,Moderate,Good,High,Single,Never,Never,No,2,Moderate,18
+184,0,15,5,3,Average,Moderate,Average,Moderate,Single,Never,Never,Yes,2,Low,29
+185,2,6,4,0,Good,Moderate,Average,Moderate,In a Relationship,Never,Never,No,5,Low,15
+186,5,15,4,0,Good,Low,Average,High,Married,Never,Never,No,3,Low,16
+187,3,16,2,3,Average,Moderate,Average,Moderate,Single,Never,Never,No,4,High,19
+188,0,21,2,4,Average,Moderate,Good,Moderate,Single,Never,Frequently,No,4,Low,22
+189,3,21,0,1,Good,Moderate,Average,Moderate,In a Relationship,Frequently,Never,No,4,Moderate,26
+190,2,6,2,3,Average,Moderate,Average,High,In a Relationship,Never,Occasionally,No,2,Low,20
+191,2,25,1,4,Average,Low,Average,Moderate,In a Relationship,Never,Occasionally,No,1,Low,16
+192,1,24,3,0,Good,Low,Average,High,Single,Never,Occasionally,Yes,2,Moderate,22
+193,0,14,1,5,Good,Moderate,Average,High,Married,Never,Occasionally,Yes,0,Moderate,19
+194,2,21,2,2,Average,Moderate,Average,Moderate,In a Relationship,Never,Occasionally,Yes,4,Moderate,27
+195,2,17,0,4,Poor,Low,Average,Moderate,Single,Frequently,Never,Yes,5,High,29
+196,2,19,4,1,Good,Moderate,Average,Moderate,Single,Never,Frequently,No,0,High,28
+197,1,6,2,1,Average,Low,Good,Moderate,Single,Never,Never,No,1,Moderate,18
+198,3,21,5,1,Good,Low,Poor,Moderate,In a Relationship,Never,Occasionally,No,0,Moderate,27
+199,4,13,0,2,Average,Low,Poor,Moderate,Single,Never,Occasionally,No,4,High,25
+200,3,11,1,3,Good,Moderate,Average,High,Single,Never,Never,No,4,Low,20
+201,1,6,0,4,Poor,Moderate,Average,High,In a Relationship,Never,Occasionally,Yes,3,Low,26
+202,4,19,1,2,Average,Moderate,Poor,High,In a Relationship,Never,Never,No,4,Moderate,29
+203,0,7,1,1,Good,Low,Poor,High,Married,Never,Never,No,2,Moderate,15
+204,2,6,5,0,Good,High,Good,Moderate,Single,Never,Never,No,2,High,25
+205,2,20,0,3,Good,Low,Poor,Moderate,In a Relationship,Occasionally,Occasionally,No,2,Low,27
+206,3,11,2,3,Good,High,Average,High,Single,Never,Occasionally,Yes,5,Moderate,28
+207,0,12,0,0,Good,Moderate,Good,Moderate,Married,Never,Occasionally,No,4,Low,22
+208,4,17,2,1,Good,Low,Average,Moderate,Single,Occasionally,Never,No,3,Moderate,16
+209,3,9,3,2,Poor,Moderate,Average,Moderate,Single,Never,Never,Yes,1,Low,21
+210,1,6,2,1,Good,Low,Poor,High,Single,Never,Frequently,Yes,4,Moderate,15
+211,5,18,2,2,Average,Moderate,Poor,High,Married,Never,Never,No,5,High,28
+212,5,7,3,1,Good,Moderate,Good,High,In a Relationship,Never,Occasionally,Yes,3,Moderate,22
+213,5,8,3,4,Good,Moderate,Average,Moderate,Single,Never,Never,No,3,High,26
+214,5,8,5,3,Average,High,Poor,Moderate,Married,Never,Occasionally,Yes,3,Moderate,20
+215,5,22,1,1,Good,Moderate,Average,Low,Single,Never,Never,No,0,Moderate,27
+216,4,23,1,1,Average,Low,Average,High,Single,Never,Never,Yes,0,High,24
+217,3,5,0,3,Good,Low,Average,Moderate,In a Relationship,Frequently,Never,No,0,Moderate,15
+218,2,7,5,0,Good,Moderate,Good,Low,Single,Never,Never,No,5,Moderate,22
+219,5,10,2,2,Good,Low,Average,Moderate,Single,Never,Never,No,5,Moderate,26
+220,1,18,5,5,Average,Low,Poor,High,In a Relationship,Never,Frequently,No,4,Moderate,20
+221,2,10,5,2,Poor,High,Good,Moderate,Married,Never,Never,Yes,1,Moderate,22
+222,3,8,2,2,Good,High,Average,Moderate,Single,Never,Never,Yes,3,Low,16
+223,4,21,0,1,Poor,High,Average,High,Married,Never,Never,Yes,2,Moderate,15
+224,1,15,4,1,Good,Low,Average,Low,Married,Never,Never,No,0,Low,16
+225,2,12,1,3,Average,Moderate,Good,Low,In a Relationship,Never,Occasionally,No,4,High,29
+226,3,10,2,5,Good,Moderate,Average,High,In a Relationship,Never,Never,No,4,High,28
+227,5,8,1,0,Average,Moderate,Poor,High,In a Relationship,Never,Occasionally,No,2,Low,23
+228,4,12,2,3,Good,Moderate,Poor,Moderate,Married,Never,Never,Yes,2,Moderate,15
+229,0,13,1,4,Average,Moderate,Poor,Moderate,Single,Frequently,Occasionally,No,4,Low,28
+230,3,22,5,3,Good,High,Average,Low,In a Relationship,Never,Occasionally,No,1,High,29
+231,3,25,0,1,Average,Low,Average,Moderate,In a Relationship,Never,Never,Yes,2,Low,26
+232,5,9,0,1,Good,Moderate,Good,Moderate,Single,Never,Occasionally,No,1,Low,28
+233,3,21,0,4,Good,Moderate,Good,High,In a Relationship,Never,Occasionally,Yes,2,Moderate,21
+234,0,19,3,4,Average,Moderate,Average,Moderate,Single,Never,Never,No,5,Moderate,29
+235,3,17,0,3,Average,High,Average,High,In a Relationship,Never,Never,No,5,Low,28
+236,1,19,3,1,Average,Moderate,Average,Low,In a Relationship,Never,Never,No,3,Low,17
+237,2,23,2,0,Average,Low,Average,Low,Single,Never,Never,No,2,Moderate,27
+238,2,8,1,2,Average,Low,Poor,High,Married,Never,Occasionally,No,4,Low,20
+239,5,17,5,0,Good,High,Average,Low,In a Relationship,Occasionally,Never,Yes,0,Moderate,21
+240,1,15,4,3,Poor,Moderate,Average,Low,In a Relationship,Never,Occasionally,No,3,Moderate,28
+241,3,13,3,4,Average,Low,Average,High,Single,Never,Occasionally,No,0,Moderate,29
+242,2,13,0,0,Good,Low,Average,Low,Single,Never,Never,No,4,Moderate,24
+243,0,15,0,3,Good,Low,Good,Moderate,Single,Never,Never,No,5,Low,22
+244,1,7,2,5,Good,Low,Good,Moderate,Single,Never,Occasionally,No,3,Low,22
+245,0,12,1,2,Good,Moderate,Average,Moderate,Single,Never,Never,Yes,3,Moderate,26
+246,3,10,2,2,Average,Low,Average,Moderate,Married,Frequently,Never,No,0,Moderate,27
+247,3,25,0,1,Average,Moderate,Poor,High,In a Relationship,Frequently,Never,No,4,High,23
+248,0,13,4,5,Average,Moderate,Average,Moderate,Single,Never,Never,No,1,Moderate,27
+249,1,13,3,5,Average,Moderate,Good,Moderate,In a Relationship,Never,Occasionally,No,2,Moderate,15
+250,1,18,3,1,Good,Low,Poor,Moderate,Married,Never,Occasionally,No,1,Low,19
+251,4,9,2,3,Average,Moderate,Average,Moderate,Single,Never,Occasionally,Yes,1,Moderate,20
+252,0,7,5,5,Good,Moderate,Average,Moderate,Single,Never,Frequently,Yes,1,Moderate,27
+253,0,16,4,3,Good,Moderate,Average,High,Married,Occasionally,Never,No,4,High,25
+254,0,10,4,0,Good,Low,Average,High,Single,Never,Never,No,0,Moderate,20
+255,5,13,4,5,Average,High,Average,Low,Single,Never,Never,Yes,1,Moderate,28
+256,0,20,0,1,Average,Moderate,Average,High,Married,Never,Occasionally,No,4,Moderate,27
+257,1,7,2,2,Average,Moderate,Average,Moderate,Single,Never,Never,No,0,Low,26
+258,2,15,2,1,Poor,Moderate,Average,High,Single,Occasionally,Never,No,5,Low,15
+259,4,8,2,4,Average,Moderate,Average,Moderate,Married,Occasionally,Never,No,2,Moderate,20
+260,5,12,0,2,Good,Low,Good,Low,Married,Never,Never,No,3,Moderate,27
+261,3,12,4,0,Poor,Moderate,Average,Low,Single,Never,Occasionally,No,1,Low,22
+262,5,22,1,1,Good,Moderate,Average,Moderate,Single,Frequently,Frequently,Yes,0,Moderate,22
+263,0,11,4,2,Good,Low,Average,High,In a Relationship,Never,Never,No,1,Moderate,16
+264,0,6,4,1,Good,Moderate,Average,Moderate,Married,Never,Never,No,2,High,17
+265,4,6,2,2,Good,Moderate,Average,Moderate,Single,Never,Occasionally,No,1,Low,24
+266,2,18,2,2,Good,Low,Average,Moderate,In a Relationship,Never,Never,No,4,Moderate,16
+267,4,11,1,1,Good,High,Average,Moderate,Single,Never,Frequently,Yes,3,Low,16
+268,3,5,5,1,Poor,Moderate,Average,Moderate,Married,Never,Never,No,2,Low,17
+269,5,15,3,1,Average,High,Average,Low,Single,Never,Never,Yes,2,Moderate,16
+270,3,14,0,1,Good,Moderate,Poor,Moderate,Married,Never,Occasionally,No,0,High,16
+271,1,19,3,2,Average,High,Average,Moderate,Single,Never,Occasionally,No,0,High,18
+272,2,8,5,3,Good,Low,Poor,Moderate,Single,Never,Frequently,Yes,5,Moderate,22
+273,4,12,0,3,Average,High,Good,High,Single,Never,Frequently,No,2,Moderate,16
+274,3,20,4,2,Good,High,Poor,Low,In a Relationship,Never,Occasionally,Yes,1,High,29
+275,1,20,2,3,Average,High,Poor,Moderate,Single,Occasionally,Frequently,No,0,Low,19
+276,5,14,2,2,Poor,Moderate,Poor,Moderate,Single,Never,Never,Yes,2,Moderate,29
+277,0,7,3,2,Good,Moderate,Good,Moderate,In a Relationship,Never,Occasionally,No,2,High,28
+278,5,7,1,1,Good,Moderate,Average,High,Married,Never,Frequently,No,2,Moderate,25
+279,1,15,0,3,Good,Moderate,Average,Moderate,Single,Never,Occasionally,No,1,High,15
+280,1,25,2,1,Good,Moderate,Good,High,Married,Never,Never,No,4,Low,29
+281,2,24,2,2,Good,Moderate,Average,Moderate,Single,Occasionally,Never,Yes,1,Low,16
+282,3,14,0,2,Average,Moderate,Average,Moderate,Single,Never,Never,No,3,Low,26
+283,3,17,1,3,Good,Moderate,Good,Moderate,In a Relationship,Never,Occasionally,Yes,1,Low,18
+284,3,15,1,2,Average,High,Average,Moderate,Married,Never,Occasionally,No,3,Moderate,28
+285,3,22,4,2,Good,High,Average,Moderate,Single,Never,Occasionally,No,5,Moderate,16
+286,2,15,1,5,Good,Moderate,Good,High,Married,Frequently,Occasionally,No,2,High,21
+287,2,15,2,5,Good,Moderate,Average,Moderate,Married,Never,Never,Yes,4,High,18
+288,2,19,3,5,Good,Moderate,Poor,Moderate,Single,Never,Occasionally,No,4,High,24
+289,1,21,3,5,Average,Low,Average,Low,Single,Never,Never,No,4,Moderate,23
+290,5,15,2,2,Good,High,Average,Low,Single,Frequently,Frequently,No,4,Moderate,23
+291,2,16,5,3,Good,Moderate,Average,High,Single,Never,Frequently,Yes,3,Moderate,15
+292,2,18,2,1,Average,High,Good,Moderate,Single,Frequently,Never,No,2,Moderate,24
+293,2,9,1,1,Good,Moderate,Good,High,In a Relationship,Never,Never,No,3,High,27
+294,3,10,0,2,Good,Moderate,Good,Moderate,Single,Never,Never,No,0,High,18
+295,0,20,0,3,Poor,Moderate,Average,Moderate,Single,Never,Never,No,5,Low,26
+296,5,13,3,0,Poor,Low,Good,High,Single,Never,Frequently,Yes,2,Low,26
+297,4,7,5,5,Good,Low,Average,High,In a Relationship,Occasionally,Occasionally,No,3,Low,28
+298,2,22,3,2,Average,Low,Average,Moderate,In a Relationship,Frequently,Occasionally,Yes,0,Moderate,17
+299,5,6,5,0,Average,Low,Average,Moderate,Single,Frequently,Occasionally,No,4,Moderate,18
+300,0,12,4,1,Good,Low,Average,High,In a Relationship,Never,Frequently,Yes,2,High,23
+301,1,18,0,0,Average,Low,Average,Moderate,Single,Never,Occasionally,No,2,High,22
+302,3,16,3,4,Average,Low,Poor,High,Single,Never,Never,No,0,Moderate,29
+303,5,18,3,0,Good,High,Average,Low,In a Relationship,Occasionally,Occasionally,Yes,3,Low,16
+304,4,10,2,1,Good,Moderate,Average,Moderate,Single,Never,Occasionally,No,5,High,27
+305,0,10,0,5,Average,Low,Poor,High,In a Relationship,Occasionally,Never,No,1,Moderate,23
+306,4,23,2,0,Average,Low,Average,Moderate,Single,Never,Never,Yes,3,Low,22
+307,2,7,0,0,Good,Moderate,Good,Moderate,Single,Never,Never,No,1,High,19
+308,0,5,2,5,Average,High,Poor,High,Single,Never,Never,No,0,Low,18
+309,5,17,5,1,Average,High,Poor,Moderate,In a Relationship,Never,Occasionally,No,2,Low,28
+310,2,22,0,1,Good,Moderate,Average,Moderate,In a Relationship,Never,Occasionally,No,5,Low,23
+311,3,13,1,1,Good,High,Good,Moderate,Single,Never,Never,Yes,3,High,21
+312,2,5,4,2,Good,Moderate,Poor,Moderate,Single,Never,Never,No,4,Moderate,20
+313,1,25,0,1,Good,Moderate,Average,Low,Single,Never,Never,Yes,1,Moderate,16
+314,5,25,0,1,Average,Moderate,Good,Moderate,Married,Never,Never,Yes,4,Moderate,22
+315,0,8,2,1,Average,Low,Average,Moderate,In a Relationship,Never,Frequently,No,2,High,23
+316,1,17,1,4,Good,Moderate,Average,Moderate,In a Relationship,Never,Occasionally,Yes,4,Moderate,21
+317,5,10,2,0,Good,Low,Good,Moderate,Single,Never,Never,No,0,Moderate,27
+318,1,12,2,3,Average,Moderate,Average,Moderate,In a Relationship,Never,Occasionally,No,2,Low,25
+319,1,6,0,0,Good,High,Average,High,Single,Never,Never,No,5,Moderate,29
+320,3,24,1,4,Good,Moderate,Good,Moderate,In a Relationship,Occasionally,Occasionally,Yes,2,High,16
+321,3,6,3,2,Average,Moderate,Average,Low,Single,Never,Never,No,1,Moderate,24
+322,3,13,1,5,Average,Moderate,Poor,Moderate,Single,Never,Never,No,1,Low,15
+323,0,6,2,2,Good,Low,Good,Low,In a Relationship,Never,Never,No,1,Low,21
+324,3,22,5,0,Average,Moderate,Poor,High,In a Relationship,Never,Never,No,3,Moderate,15
+325,5,5,0,4,Good,Moderate,Average,High,In a Relationship,Never,Never,Yes,0,Moderate,20
+326,4,17,0,2,Good,Low,Poor,Moderate,Single,Never,Frequently,No,2,Low,28
+327,1,14,5,2,Good,Moderate,Good,Moderate,In a Relationship,Never,Occasionally,No,3,High,19
+328,5,9,2,0,Average,Low,Poor,Moderate,In a Relationship,Never,Frequently,Yes,5,High,29
+329,1,13,4,3,Good,High,Poor,High,Single,Never,Never,No,0,Low,15
+330,5,13,2,3,Good,Moderate,Good,High,Married,Never,Occasionally,Yes,1,Moderate,27
+331,5,12,0,2,Average,High,Poor,Low,Single,Never,Never,Yes,1,Moderate,19
+332,3,25,1,4,Good,Low,Average,Moderate,In a Relationship,Never,Occasionally,No,1,Moderate,23
+333,1,20,4,2,Good,Moderate,Average,Moderate,In a Relationship,Never,Occasionally,Yes,4,Moderate,29
+334,5,6,2,2,Average,High,Average,High,In a Relationship,Never,Never,Yes,0,Moderate,18
+335,1,20,3,1,Good,High,Good,High,Single,Never,Occasionally,No,2,Moderate,16
+336,5,23,4,5,Good,High,Average,High,Single,Occasionally,Never,No,0,Low,25
+337,2,21,2,0,Good,Low,Average,Moderate,In a Relationship,Occasionally,Never,Yes,4,Moderate,22
+338,5,11,1,2,Good,Low,Average,Moderate,Single,Never,Frequently,Yes,0,High,23
+339,2,25,3,3,Good,Moderate,Average,High,Single,Never,Never,No,3,Moderate,22
+340,1,25,5,2,Good,Moderate,Poor,Moderate,Married,Frequently,Never,No,5,Low,29
+341,1,24,3,5,Average,Moderate,Average,Low,In a Relationship,Never,Frequently,No,3,Moderate,19
+342,3,15,0,3,Poor,Low,Average,Low,Single,Never,Never,No,1,High,17
+343,4,23,2,3,Good,Low,Average,Moderate,In a Relationship,Never,Never,Yes,0,Moderate,27
+344,0,7,4,3,Good,Moderate,Poor,Moderate,Married,Frequently,Occasionally,Yes,5,Low,25
+345,3,19,4,1,Good,Low,Poor,Moderate,In a Relationship,Never,Occasionally,No,1,Moderate,20
+346,4,9,4,0,Average,Low,Average,High,In a Relationship,Never,Never,No,0,High,25
+347,0,25,3,1,Good,Moderate,Average,Moderate,Single,Never,Occasionally,Yes,2,Moderate,19
+348,0,8,2,0,Average,Low,Average,Moderate,Single,Never,Never,No,2,Moderate,29
+349,3,24,3,4,Good,Moderate,Average,Moderate,Single,Never,Never,Yes,3,Moderate,24
+350,2,11,0,4,Good,Moderate,Average,High,Single,Occasionally,Occasionally,Yes,4,High,19
+351,4,19,0,0,Average,Low,Average,Moderate,In a Relationship,Never,Never,No,1,Low,23
+352,1,15,3,3,Good,Moderate,Average,High,In a Relationship,Never,Never,No,3,Moderate,18
+353,3,9,0,3,Good,Moderate,Poor,Moderate,In a Relationship,Never,Occasionally,No,0,Moderate,19
+354,3,23,3,0,Good,Moderate,Average,Moderate,Single,Never,Never,No,0,Moderate,25
+355,2,17,1,1,Average,Low,Average,Moderate,Married,Never,Never,No,4,High,27
+356,1,18,2,4,Average,High,Poor,High,In a Relationship,Never,Frequently,No,2,Low,27
+357,3,19,0,3,Average,Low,Average,Moderate,In a Relationship,Never,Frequently,No,5,Low,17
+358,0,11,3,4,Average,High,Average,High,In a Relationship,Never,Never,Yes,5,Moderate,27
+359,1,16,2,2,Average,High,Average,High,Single,Never,Occasionally,No,2,Moderate,24
+360,0,21,3,3,Good,Moderate,Poor,Low,Married,Never,Frequently,Yes,5,Moderate,21
+361,3,20,3,0,Good,Moderate,Average,Moderate,In a Relationship,Occasionally,Never,No,4,High,24
+362,4,15,5,2,Average,Moderate,Good,Low,Single,Never,Occasionally,No,2,Low,24
+363,5,17,0,4,Average,Moderate,Poor,Moderate,In a Relationship,Never,Never,No,3,Moderate,29
+364,0,9,3,4,Good,Moderate,Average,Moderate,In a Relationship,Never,Never,No,5,Low,27
+365,0,25,3,1,Good,High,Average,Low,Single,Never,Frequently,No,0,Low,23
+366,2,22,2,5,Good,Low,Average,Moderate,In a Relationship,Never,Never,Yes,0,High,22
+367,2,6,2,3,Good,Moderate,Poor,Moderate,Single,Never,Never,No,4,Moderate,17
+368,0,8,1,0,Good,Moderate,Average,Moderate,Single,Never,Never,No,2,Moderate,18
+369,2,17,1,2,Good,Moderate,Good,Moderate,Single,Never,Never,Yes,3,Low,26
+370,4,14,0,5,Average,Moderate,Good,High,Married,Never,Never,No,0,Moderate,23
+371,4,19,4,5,Good,Moderate,Average,Low,Single,Never,Occasionally,No,2,Moderate,23
+372,1,20,2,4,Poor,Moderate,Average,Moderate,Single,Never,Never,No,0,Low,18
+373,2,18,0,1,Good,Moderate,Average,High,Single,Never,Occasionally,Yes,4,Low,21
+374,1,18,5,1,Good,High,Good,Moderate,In a Relationship,Never,Occasionally,No,0,Low,27
+375,1,18,3,5,Good,Moderate,Poor,Moderate,Single,Never,Never,No,1,Low,18
+376,2,14,2,3,Good,Moderate,Average,Moderate,In a Relationship,Never,Never,No,3,High,18
+377,4,7,4,4,Average,Low,Poor,Low,In a Relationship,Never,Never,No,3,Moderate,19
+378,3,16,3,2,Good,Moderate,Average,High,Married,Never,Never,No,2,Moderate,27
+379,1,5,2,2,Average,Moderate,Good,Moderate,Single,Never,Never,Yes,1,Moderate,23
+380,1,7,4,3,Average,High,Average,High,Married,Never,Never,Yes,5,Moderate,27
+381,4,14,0,4,Good,High,Average,High,Married,Never,Never,No,1,Moderate,19
+382,2,18,0,3,Good,Moderate,Average,Moderate,Single,Frequently,Occasionally,No,3,Moderate,29
+383,2,13,0,2,Good,Moderate,Average,High,Single,Never,Never,Yes,5,Moderate,28
+384,0,11,3,5,Average,High,Average,Low,In a Relationship,Occasionally,Occasionally,No,0,Moderate,21
+385,5,24,3,0,Good,Moderate,Average,Moderate,Married,Occasionally,Never,Yes,3,Moderate,26
+386,2,14,3,3,Good,Moderate,Average,High,Single,Never,Occasionally,Yes,5,Low,22
+387,3,13,1,3,Good,Moderate,Poor,Moderate,Single,Never,Frequently,No,3,Moderate,16
+388,4,21,3,2,Average,Low,Good,Moderate,In a Relationship,Never,Never,Yes,3,Moderate,20
+389,5,9,1,5,Good,Moderate,Average,Moderate,Single,Never,Never,Yes,3,Moderate,21
+390,2,14,3,2,Good,Low,Average,Moderate,Single,Never,Occasionally,No,3,High,26
+391,3,12,3,3,Good,Moderate,Poor,Low,Single,Never,Never,No,0,Moderate,27
+392,5,17,3,2,Average,Moderate,Average,Moderate,Single,Never,Never,Yes,1,Moderate,21
+393,5,11,0,5,Average,Moderate,Average,Moderate,Single,Never,Never,Yes,0,Moderate,17
+394,3,16,0,2,Good,Moderate,Average,Moderate,Single,Never,Frequently,No,1,Low,15
+395,0,17,5,1,Good,High,Average,Moderate,Married,Never,Never,No,5,Low,17
+396,2,7,0,0,Average,Moderate,Good,Moderate,Single,Never,Occasionally,No,3,Moderate,16
+397,4,12,4,1,Average,High,Good,Low,In a Relationship,Never,Never,No,1,Moderate,16
+398,2,10,2,0,Good,Low,Average,Moderate,Married,Never,Never,No,1,Low,27
+399,1,11,4,3,Good,Moderate,Good,Low,Single,Never,Occasionally,No,0,High,24
+400,1,17,3,0,Good,High,Average,High,Single,Never,Frequently,No,1,Moderate,15
+401,4,7,0,0,Poor,High,Average,Moderate,Single,Never,Occasionally,Yes,1,High,27
+402,2,8,4,0,Average,Moderate,Poor,Moderate,In a Relationship,Never,Frequently,Yes,3,Moderate,21
+403,2,24,3,0,Average,High,Poor,Moderate,Single,Never,Occasionally,Yes,2,High,29
+404,1,13,0,3,Poor,Low,Good,Moderate,Single,Never,Occasionally,No,0,High,22
+405,3,7,5,2,Average,Low,Good,Moderate,Single,Never,Never,No,1,Moderate,20
+406,1,5,3,4,Good,High,Good,Moderate,Single,Never,Occasionally,Yes,0,High,27
+407,3,23,4,1,Average,Moderate,Good,Moderate,Single,Never,Never,Yes,2,Moderate,23
+408,0,18,2,3,Average,Low,Average,High,In a Relationship,Never,Occasionally,No,1,Moderate,28
+409,3,9,0,0,Average,Low,Good,Low,Single,Never,Never,No,4,High,21
+410,3,13,2,1,Good,Low,Average,Moderate,In a Relationship,Never,Frequently,No,3,Moderate,26
+411,4,6,0,0,Good,Moderate,Average,Moderate,Married,Never,Occasionally,No,2,Low,15
+412,2,21,3,2,Average,Low,Poor,High,In a Relationship,Never,Never,No,5,Moderate,24
+413,4,24,0,4,Average,Moderate,Poor,High,Married,Never,Occasionally,No,3,High,24
+414,3,11,1,0,Average,Moderate,Average,High,Married,Never,Frequently,Yes,2,Moderate,19
+415,1,25,2,4,Good,High,Average,Moderate,Single,Never,Occasionally,No,1,High,16
+416,3,10,1,5,Good,Moderate,Average,Low,Single,Never,Never,No,2,Moderate,16
+417,4,5,3,0,Good,High,Poor,Moderate,Single,Never,Occasionally,No,1,High,20
+418,2,9,0,1,Average,Moderate,Good,High,Married,Never,Never,No,4,Moderate,20
+419,0,20,1,4,Good,Low,Average,Moderate,In a Relationship,Never,Never,No,3,Low,15
+420,5,16,0,2,Good,High,Good,Moderate,Single,Never,Frequently,No,0,Low,26
+421,1,12,0,1,Good,Low,Poor,Moderate,Single,Frequently,Frequently,No,1,High,23
+422,4,25,2,3,Average,High,Average,Moderate,Married,Never,Occasionally,Yes,2,Low,20
+423,1,7,5,0,Good,Moderate,Average,Low,In a Relationship,Never,Never,Yes,0,Moderate,15
+424,2,15,2,3,Good,Low,Average,Moderate,Single,Never,Occasionally,No,0,Moderate,28
+425,3,23,0,0,Good,Moderate,Average,High,Married,Never,Occasionally,No,4,Moderate,17
+426,1,11,3,4,Average,High,Good,Moderate,Single,Never,Never,No,2,Low,17
+427,2,9,5,0,Average,High,Poor,High,Single,Never,Never,No,5,Low,19
+428,3,15,3,5,Average,Moderate,Average,High,Single,Never,Never,Yes,3,Moderate,26
+429,4,9,0,0,Good,Moderate,Poor,Moderate,In a Relationship,Never,Occasionally,No,4,Moderate,29
+430,2,20,2,0,Good,High,Average,Low,Single,Never,Never,No,2,High,20
+431,1,7,1,3,Average,Moderate,Average,Moderate,Married,Never,Never,No,0,Moderate,17
+432,3,20,4,0,Good,Low,Average,Moderate,Single,Never,Frequently,No,1,Moderate,29
+433,1,13,3,2,Good,Moderate,Average,Moderate,Married,Never,Occasionally,Yes,1,High,27
+434,3,23,2,0,Good,Moderate,Average,High,In a Relationship,Frequently,Occasionally,No,0,Moderate,17
+435,1,24,3,1,Good,Moderate,Average,Moderate,Single,Never,Never,No,1,Moderate,26
+436,3,25,2,0,Average,Moderate,Poor,High,In a Relationship,Never,Occasionally,No,5,Moderate,29
+437,2,8,5,5,Good,Moderate,Average,Moderate,In a Relationship,Never,Never,Yes,2,Moderate,16
+438,2,15,1,3,Good,Moderate,Average,Low,In a Relationship,Never,Occasionally,Yes,1,Moderate,27
+439,3,18,2,0,Good,Moderate,Good,High,Married,Never,Occasionally,No,4,Moderate,17
+440,1,16,5,1,Poor,Moderate,Good,Moderate,In a Relationship,Never,Never,Yes,3,Moderate,15
+441,2,22,0,1,Good,High,Average,High,Single,Occasionally,Never,No,5,High,24
+442,3,23,1,1,Average,Low,Average,Moderate,Single,Never,Occasionally,No,4,Moderate,24
+443,3,20,2,2,Good,Moderate,Average,Low,Single,Never,Never,Yes,3,High,19
+444,0,24,2,0,Average,Low,Poor,Low,Married,Never,Never,No,3,Moderate,28
+445,2,18,0,5,Good,Moderate,Average,Moderate,Married,Never,Occasionally,Yes,3,Low,15
+446,0,19,0,5,Poor,Moderate,Average,Moderate,Single,Occasionally,Never,No,1,High,23
+447,3,20,5,1,Good,Moderate,Average,Moderate,Married,Occasionally,Never,No,4,High,26
+448,5,12,4,1,Good,Low,Average,Moderate,Married,Frequently,Never,No,0,Low,27
+449,3,18,4,0,Average,Low,Good,Moderate,In a Relationship,Never,Never,No,2,Low,27
+450,1,25,0,5,Good,Moderate,Poor,Moderate,Single,Never,Never,Yes,0,Low,29
+451,5,20,0,3,Good,Moderate,Good,Low,Single,Never,Occasionally,No,4,Low,25
+452,4,11,1,3,Average,High,Average,High,In a Relationship,Never,Never,No,2,Low,23
+453,1,5,2,1,Average,Moderate,Average,Moderate,Married,Never,Never,No,2,Low,28
+454,0,11,4,0,Poor,High,Average,Low,Single,Never,Never,No,4,Moderate,18
+455,0,19,2,3,Good,Low,Average,Moderate,Single,Never,Never,No,2,Low,23
+456,2,24,2,1,Good,Low,Average,High,Single,Never,Never,No,4,Moderate,17
+457,0,18,1,1,Good,Low,Poor,Moderate,In a Relationship,Occasionally,Occasionally,Yes,3,Moderate,23
+458,0,11,0,3,Good,High,Poor,High,Married,Never,Occasionally,No,0,High,17
+459,5,13,1,1,Good,Moderate,Poor,Moderate,Single,Never,Never,Yes,0,High,22
+460,4,14,1,1,Good,Moderate,Average,Low,Single,Never,Never,Yes,1,Moderate,15
+461,5,18,3,0,Average,High,Good,Moderate,Single,Never,Never,No,1,High,18
+462,1,12,4,0,Good,Moderate,Average,Moderate,Married,Never,Occasionally,Yes,0,High,20
+463,4,6,1,0,Poor,Moderate,Average,Moderate,Married,Never,Never,Yes,3,Moderate,15
+464,1,18,5,0,Poor,Low,Average,Moderate,Married,Never,Never,No,2,High,24
+465,1,11,0,3,Average,Moderate,Good,Low,Single,Never,Occasionally,No,5,Low,21
+466,5,21,5,2,Good,High,Poor,Moderate,Single,Occasionally,Never,No,4,Moderate,15
+467,4,13,4,2,Poor,Low,Average,Moderate,Single,Never,Never,No,4,Low,25
+468,0,22,3,0,Average,Moderate,Good,High,In a Relationship,Never,Never,No,4,Low,20
+469,2,5,2,2,Good,Moderate,Average,High,In a Relationship,Never,Never,Yes,4,Low,26
+470,4,17,3,0,Average,Low,Average,Low,Single,Never,Never,No,1,Moderate,16
+471,3,25,1,4,Average,Moderate,Good,Moderate,In a Relationship,Never,Never,Yes,3,High,21
+472,5,18,2,4,Poor,Low,Average,Low,In a Relationship,Never,Never,Yes,4,High,18
+473,3,8,1,2,Average,Low,Average,High,Single,Never,Never,Yes,5,Moderate,21
+474,4,22,2,0,Average,Moderate,Average,Moderate,In a Relationship,Never,Never,No,4,High,18
+475,3,24,4,0,Good,Moderate,Poor,High,Married,Never,Never,No,0,Low,20
+476,4,14,3,3,Good,Low,Average,High,Single,Never,Never,No,5,High,27
+477,0,18,4,2,Average,Low,Average,High,In a Relationship,Occasionally,Never,No,2,Moderate,21
+478,1,6,2,5,Poor,Moderate,Average,Moderate,Single,Never,Frequently,No,4,Low,24
+479,1,12,1,3,Good,Low,Average,Moderate,Single,Never,Never,No,0,Moderate,16
+480,5,11,3,0,Average,Moderate,Average,Moderate,Single,Occasionally,Never,Yes,3,Moderate,19
+481,2,24,2,2,Good,Low,Average,Moderate,Single,Never,Never,Yes,2,Moderate,18
+482,5,17,4,4,Good,High,Average,High,Single,Never,Never,Yes,4,Low,15
+483,2,20,0,1,Good,Low,Poor,Moderate,Single,Occasionally,Occasionally,No,0,High,20
+484,3,22,4,4,Good,Moderate,Poor,Low,Single,Frequently,Never,Yes,5,Moderate,28
+485,1,20,3,5,Good,Moderate,Good,Moderate,Married,Frequently,Occasionally,No,2,Moderate,16
+486,2,14,4,3,Good,High,Good,High,Married,Never,Never,No,0,High,24
+487,2,13,0,4,Good,Moderate,Average,High,In a Relationship,Never,Never,No,5,Moderate,21
+488,4,14,5,3,Good,Moderate,Poor,Moderate,Single,Occasionally,Frequently,Yes,3,Moderate,27
+489,3,22,2,4,Average,Low,Good,Low,Single,Never,Occasionally,Yes,5,High,18
+490,4,15,2,3,Good,High,Average,Low,In a Relationship,Never,Never,Yes,2,Moderate,25
+491,3,23,2,3,Good,Low,Average,Moderate,Single,Never,Never,No,5,Low,22
+492,3,21,0,3,Good,High,Good,High,Single,Frequently,Never,No,0,High,28
+493,1,24,3,4,Good,Low,Average,Moderate,Single,Never,Never,No,3,High,29
+494,1,20,2,1,Average,High,Average,High,Single,Never,Occasionally,No,4,Moderate,29
+495,1,10,5,1,Good,Moderate,Average,Low,Single,Never,Occasionally,Yes,5,Moderate,19
+496,3,23,1,2,Average,Low,Average,Moderate,Single,Never,Occasionally,No,2,Low,15
+497,5,13,1,2,Good,High,Average,Moderate,In a Relationship,Never,Never,No,2,Moderate,28
+498,3,25,3,1,Good,High,Average,High,Single,Frequently,Occasionally,Yes,2,Moderate,24
+499,3,25,2,2,Good,High,Average,High,In a Relationship,Never,Never,No,2,High,28
+500,3,15,0,4,Good,High,Good,Moderate,In a Relationship,Never,Never,Yes,2,High,17
+501,3,24,1,4,Good,High,Average,Moderate,In a Relationship,Never,Never,Yes,4,Moderate,18
+502,0,18,0,0,Good,High,Poor,Moderate,Single,Frequently,Never,No,5,Moderate,24
+503,0,22,5,0,Poor,Moderate,Poor,Moderate,Single,Frequently,Never,Yes,1,Moderate,17
+504,2,10,4,0,Good,High,Average,Moderate,Single,Never,Occasionally,No,0,Moderate,22
+505,2,12,4,2,Good,Moderate,Good,Moderate,Single,Never,Frequently,No,1,Moderate,23
+506,5,20,0,4,Good,Low,Average,Moderate,Single,Never,Occasionally,Yes,4,Moderate,15
+507,2,8,2,5,Average,Low,Good,Low,Single,Never,Never,No,5,Low,22
+508,0,18,0,5,Good,Moderate,Good,Moderate,Single,Never,Never,No,3,Moderate,22
+509,2,20,3,1,Good,Moderate,Poor,Moderate,Married,Never,Occasionally,No,1,Low,23
+510,3,8,0,2,Good,High,Average,Moderate,In a Relationship,Never,Frequently,No,5,Moderate,24
+511,3,17,4,2,Average,Low,Poor,Moderate,In a Relationship,Never,Never,No,1,Moderate,15
+512,1,5,1,2,Good,Moderate,Average,Low,Single,Never,Never,Yes,1,High,29
+513,3,10,3,5,Good,Moderate,Average,High,Married,Never,Occasionally,Yes,4,Low,29
+514,3,20,3,5,Average,Low,Poor,High,In a Relationship,Never,Occasionally,No,5,Moderate,24
+515,4,24,1,2,Average,Low,Poor,Low,Single,Never,Occasionally,No,0,Low,15
+516,1,24,2,2,Good,Low,Good,Moderate,In a Relationship,Never,Frequently,No,0,Moderate,24
+517,1,8,4,0,Average,Low,Average,Moderate,Married,Never,Never,Yes,3,Moderate,28
+518,5,14,3,1,Poor,Moderate,Average,Low,Single,Never,Occasionally,No,3,Low,28
+519,5,8,4,0,Average,Low,Good,Moderate,Single,Never,Occasionally,No,3,Moderate,24
+520,4,20,3,4,Good,Moderate,Good,Low,Single,Frequently,Never,Yes,2,High,26
+521,4,10,1,3,Average,Low,Good,Moderate,Single,Never,Never,No,0,Low,17
+522,4,19,1,0,Average,Low,Average,High,In a Relationship,Never,Frequently,Yes,4,Low,15
+523,5,11,3,0,Good,Low,Average,Low,In a Relationship,Never,Never,Yes,0,Low,23
+524,3,6,1,3,Good,Low,Average,Moderate,In a Relationship,Never,Occasionally,Yes,2,Moderate,19
+525,4,16,5,2,Average,High,Average,High,Married,Never,Occasionally,No,0,Moderate,27
+526,1,15,2,3,Good,High,Average,Moderate,Single,Never,Occasionally,No,0,Low,28
+527,2,16,4,2,Good,Moderate,Poor,Moderate,Single,Never,Occasionally,No,1,Low,29
+528,3,24,4,5,Good,Moderate,Average,Moderate,In a Relationship,Never,Never,Yes,3,Moderate,18
+529,3,24,0,1,Good,Moderate,Poor,Moderate,Single,Never,Never,No,5,Moderate,21
+530,0,23,2,5,Good,Moderate,Average,Moderate,Single,Never,Frequently,No,3,Moderate,18
+531,5,17,4,1,Poor,Moderate,Average,Low,In a Relationship,Never,Never,No,1,Low,17
+532,5,15,2,0,Average,Low,Average,Low,Married,Never,Never,No,4,High,23
+533,2,24,1,2,Good,High,Average,High,Single,Never,Occasionally,No,0,Low,21
+534,2,16,4,3,Good,Moderate,Average,Moderate,Single,Never,Occasionally,Yes,4,High,18
+535,1,14,2,3,Good,Moderate,Average,Moderate,Single,Occasionally,Never,Yes,1,Low,18
+536,3,24,1,1,Good,High,Poor,Low,In a Relationship,Never,Frequently,No,5,Moderate,20
+537,4,7,1,2,Good,Low,Good,Low,Single,Never,Never,No,4,Moderate,27
+538,2,23,3,3,Average,Moderate,Good,High,Single,Never,Never,Yes,4,Low,25
+539,1,23,1,3,Average,Moderate,Average,Low,In a Relationship,Never,Never,No,0,Moderate,25
+540,1,14,2,5,Average,Low,Average,Moderate,Single,Never,Never,No,4,Moderate,20
+541,1,15,0,4,Good,High,Average,High,Single,Never,Occasionally,No,2,High,25
+542,2,20,3,3,Good,High,Average,High,In a Relationship,Never,Frequently,No,0,Moderate,26
+543,1,12,4,0,Good,High,Average,Moderate,Single,Never,Never,Yes,2,Moderate,17
+544,5,18,1,0,Average,Moderate,Average,High,Married,Never,Never,No,0,Moderate,19
+545,2,14,4,0,Good,Moderate,Poor,High,In a Relationship,Never,Occasionally,No,4,Low,26
+546,4,24,0,2,Poor,Moderate,Average,Low,Single,Never,Occasionally,Yes,1,Low,20
+547,4,22,5,1,Good,Moderate,Poor,Low,Married,Never,Never,No,2,Low,27
+548,2,8,2,3,Good,Moderate,Average,High,Single,Never,Never,Yes,1,Moderate,20
+549,2,6,0,3,Good,Low,Average,Moderate,Married,Never,Never,No,0,Low,20
+550,1,12,3,5,Good,Low,Average,Low,Single,Never,Occasionally,No,4,Moderate,28
+551,4,14,5,3,Poor,Moderate,Average,High,In a Relationship,Occasionally,Never,No,3,Low,22
+552,5,25,5,2,Good,High,Good,Low,In a Relationship,Never,Never,No,0,High,28
+553,3,18,1,0,Good,Low,Average,Low,Married,Never,Never,No,3,High,19
+554,3,8,3,3,Average,High,Average,Low,Single,Never,Never,Yes,5,Low,28
+555,1,15,5,4,Good,Moderate,Poor,High,Single,Never,Never,No,0,Moderate,15
+556,1,12,0,1,Good,High,Good,Low,Married,Never,Never,Yes,2,Moderate,19
+557,2,13,4,1,Good,Low,Good,Moderate,In a Relationship,Never,Never,No,1,Low,23
+558,5,21,1,0,Poor,Moderate,Average,High,Single,Never,Never,Yes,0,High,26
+559,2,15,2,2,Good,Low,Average,Moderate,Single,Never,Never,No,2,High,28
+560,5,14,1,5,Average,Moderate,Average,High,Single,Never,Never,No,2,High,23
+561,0,25,1,0,Good,High,Average,High,Single,Never,Never,Yes,1,Low,20
+562,5,21,1,2,Average,Moderate,Good,Moderate,In a Relationship,Never,Never,No,1,High,20
+563,1,16,2,5,Good,Moderate,Average,High,Single,Never,Occasionally,No,1,High,15
+564,4,22,3,2,Good,Moderate,Average,High,In a Relationship,Never,Occasionally,No,5,Moderate,28
+565,1,25,1,0,Good,Moderate,Average,Moderate,In a Relationship,Never,Never,No,2,High,20
+566,0,8,2,3,Average,Moderate,Poor,Moderate,Single,Never,Never,No,2,High,25
+567,3,15,1,5,Average,Low,Average,Moderate,Single,Never,Occasionally,No,4,Low,15
+568,1,9,0,1,Average,Moderate,Poor,Moderate,Single,Never,Occasionally,No,4,Moderate,17
+569,3,19,2,0,Poor,Moderate,Good,Moderate,In a Relationship,Never,Never,No,4,Moderate,24
+570,0,6,1,2,Poor,Moderate,Average,Moderate,Single,Never,Never,Yes,4,Low,29
+571,0,25,5,1,Average,High,Average,Moderate,In a Relationship,Never,Occasionally,Yes,3,Moderate,27
+572,2,14,4,2,Good,Low,Average,Low,Single,Never,Never,Yes,3,Moderate,27
+573,3,25,2,2,Average,High,Poor,Moderate,Married,Frequently,Never,No,2,Moderate,26
+574,0,15,4,2,Good,High,Average,High,Married,Never,Frequently,No,4,Moderate,17
+575,0,20,5,3,Average,High,Average,Moderate,Single,Never,Occasionally,No,0,Moderate,21
+576,3,10,2,5,Average,Moderate,Average,Moderate,In a Relationship,Frequently,Never,No,2,Low,21
+577,3,14,4,1,Poor,High,Average,High,Single,Never,Occasionally,No,4,Moderate,29
+578,3,6,2,4,Good,Moderate,Poor,Moderate,Single,Never,Never,No,2,Low,15
+579,1,9,0,3,Good,Low,Average,Moderate,In a Relationship,Occasionally,Never,Yes,2,Low,27
+580,1,6,4,5,Poor,Moderate,Average,High,Single,Never,Occasionally,No,3,High,17
+581,1,23,4,0,Good,Moderate,Good,Moderate,Married,Never,Never,No,2,Moderate,22
+582,0,15,4,3,Average,Moderate,Average,Moderate,Single,Never,Never,No,1,Moderate,27
+583,3,14,1,1,Poor,Moderate,Average,Moderate,In a Relationship,Never,Occasionally,No,1,Moderate,23
+584,0,25,1,5,Good,Moderate,Average,High,In a Relationship,Never,Occasionally,Yes,4,High,28
