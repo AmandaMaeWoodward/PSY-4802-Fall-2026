@@ -349,6 +349,7 @@ biserial correlation b/c one variable is binary and the other is continuous
 
 3. Run a binomial test to determine if the number of cars with manual transmission differs from chance. (hint: use the ? feature to learn more about the dataset.)
 
+
 ```{r}
 
 ```
