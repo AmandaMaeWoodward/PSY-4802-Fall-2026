@@ -21,7 +21,10 @@ We'll use data from a student mental health survey collected last year.
 ## Import the data
 
 ```{r}
-
+library(readr)
+smh <- read_csv("students_mental_health_survey fall 2025.csv")
+getwd()
+setwd()
 ```
 
 
@@ -32,21 +35,34 @@ We've gone through some of these already, but I want to make sure we're on the s
 
 ##### Mean 
 ```{r}
-
+mean(smh$cortisolLevel) #na.rm= TRUE
 ```
 ##### Median
 ```{r}
-
+median(smh$cortisolLevel) #na.rm=TRUE
 ```
 
 ##### Mode
 ```{r}
-
+library(modeest)
+mfv(smh$cortisolLevel)
 ```
 
 ##### Pipes
 ```{r}
+library(tidyverse)
+smh |> summarize(meanCortisol= mean(cortisolLevel), medianCortisol= median(cortisolLevel), modeCortisol= mfv(cortisolLevel))
+```
 
+```{r}
+class(smh$sleepQuality)
+smh$sleepQuality<- as.factor(smh$sleepQuality)
+summary(is.na(smh$sleepQuality))
+
+mfv(smh$cortisolLevel[smh$sleepQuality=="Poor"])
+
+levels(smh$sleepQuality)
+smh |> group_by(sleepQuality)|>reframe(meanCortisol= mean(cortisolLevel), medianCortisol= median(cortisolLevel), modeCortisol= mfv(cortisolLevel))
 ```
 
 
@@ -55,36 +71,33 @@ We've gone through some of these already, but I want to make sure we're on the s
 
 ##### Range
 ```{r}
-
+range(smh$cortisolLevel)
+25-5
 ```
 
 ##### Interquartile Range
 ```{r}
-
+IQR(smh$cortisolLevel)
 ```
 
 ##### Standard Deviation
 ```{r}
-
+sd(smh$cortisolLevel) #typical distance from the mean
 ```
 
 ##### Variance
 ```{r}
-
+var(smh$cortisolLevel)
 ```
 
 ##### Pipes
 ```{r}
-
+smh |> summarize(sdCortisol= sd(cortisolLevel), IQR= IQR(cortisolLevel), var= var(cortisolLevel))
 ```
 
 ##### Summary
 ```{r}
-
-```
-##### bringing it all together
-```{r}
-
+summary(smh$cortisolLevel)
 ```
 
 #### Z Score
