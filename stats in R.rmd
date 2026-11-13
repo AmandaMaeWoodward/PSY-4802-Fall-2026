@@ -16,12 +16,17 @@ By the end of today's class, students should be able to:
 Additionally, we will **not** cover interpretations in depth in this class. The goal is to teach you how to use R to run the tests, and adding interpretations for each test could make this into several semester long courses. However, if you have questions about how to interpret statistics, please let me know and I can adjust our course material. I am happy to talk about interpretations in office hours, or you will learn about them in your statistics courses.
 
 We'll use data from a student mental health survey collected last year. 
+# open libraries 
+```{r}
+library(tidyverse)
+library(readr)
+library(modeest)
+```
 
 
 ## Import the data
 
 ```{r}
-library(readr)
 smh <- read_csv("students_mental_health_survey fall 2025.csv")
 getwd()
 setwd()
@@ -44,13 +49,11 @@ median(smh$cortisolLevel) #na.rm=TRUE
 
 ##### Mode
 ```{r}
-library(modeest)
 mfv(smh$cortisolLevel)
 ```
 
 ##### Pipes
 ```{r}
-library(tidyverse)
 smh |> summarize(meanCortisol= mean(cortisolLevel), medianCortisol= median(cortisolLevel), modeCortisol= mfv(cortisolLevel))
 ```
 
@@ -105,26 +108,39 @@ summary(smh$cortisolLevel)
 The other thing that we'll put in this section is how to create a z score in your data. This allows us to view one score relative to others, even if they are collected from different distributions
 
 ```{r}
+smh$cortisolLevelZ<- scale(smh$cortisolLevel)
 
+smh %>% select(cortisolLevel, cortisolLevelZ)
 ```
 
 ##### Learning Outcome 1 Practice
 1) calculate the mean, median, and mode for any data in the our Dataset
 ```{r}
+smh %>% summarize(meanCredits = mean(creditLoad), medianCredits=median(creditLoad), modeCredit= mfv(creditLoad))
 
+mean(smh$creditLoad)
+median(smh$creditLoad)
+mfv(smh$creditLoad)
 ```
 
 2) what do you notice about these scores? (are they the same? different?)
+these are pretty similar 
+
+```{r}
+ggplot(smh, aes(creditLoad))+geom_histogram()
+```
+
 
 3) create z scores for any data in our Dataset. Interpret what participant 3's z score means. 
 ```{r}
-
+smh$creditLoadZ<- scale(smh$creditLoad)
+smh %>% select(Participant, creditLoad, creditLoadZ) %>% filter(Participant ==3)
 ```
 
 
  *Challenge* Graph your data and include the mean median and mode on the graph 
 ```{r}
-
+ggplot(smh, aes(creditLoad))+geom_histogram()+ geom_vline(xintercept = mean(smh$creditLoad), color="purple", linewidth = 1)+ geom_vline(xintercept= median(smh$creditLoad), color="blue", linewidth=1)+ geom_vline(xintercept = mfv(smh$creditLoad), color="green", linewidth=1)+ theme_classic()
 ```
 
 
@@ -133,32 +149,29 @@ The other thing that we'll put in this section is how to create a z score in you
 Now that we have covered some descriptive statistics, we'll talk about parametric ones. Parametric statistics are those that rely on assumptions to make inferences from the sample to the population. We'll go through correlations, t-tests, regression, and ANOVA. We'll go through nonparametric tests, or those that rely on less assumptions, in the next section. 
 
 #### Pearson correlation
-We'll practice running correlations using the dataset above. To do this, we'll look at the correlation between fishavailable and temperature
+We'll practice running correlations using the dataset above. To do this, we'll look at the correlation between cortisol level and creditload
 `cor(x, y)`
 ```{r}
-
-```
-
-```{r}
-
+cor(smh$cortisolLevel, smh$creditLoad)
+ggplot(smh, aes(cortisolLevel, creditLoad))+geom_point()+ geom_smooth(method="lm")
 ```
 
 **Note:** It's great that we can see the correlation between these two measures, but we don't have any additional information, ie information related to significance.We can use another function, `cor.test()`, to get information about significance.
 `cor.test(x,y)`
 ```{r}
-
+cor.test(smh$cortisolLevel, smh$creditLoad)
 ```
 
 We can change whether we our conducting a one tailed or a two tailed test by including an additional argument "alternative." It defaults to a two tailed test, but we can specify a one tailed test in either direction (`"greater"` or `"less"`). The default is `"two.sided"` 
 ```{r}
-
+cor.test(smh$cortisolLevel, smh$creditLoad, alternative = "greater") #use use= to specify how to handle rows w/ missing data 
 ```
 
 ### Extra Code about Correlation Tables 
 `cor()` can also be used to create correlation matrices, but need to create a dataframe that is just the variables you'd like to use. 
 `cor(data)`
 ```{r}
-
+cor(smh[,2:5])
 ```
 for heat map of correlations see: http://www.sthda.com/english/wiki/ggplot2-quick-correlation-matrix-heatmap-r-software-and-data-visualization 
 
@@ -169,12 +182,17 @@ We can run a variety of t-tests using the same function `t.test()`.
 A one sample t test can be computed by specifying mu in the arguments. 
 `t.test(variable, mu)`
 ```{r}
-
+t.test(smh$creditLoad, mu= 15, alternative="two.sided")
+library(effsize)
+cohen.d(smh$creditLoad, mu=15, f=NA)
 ```
 
 ##### two samples t-test
 There are two ways we can use this function when we have two variables (independent or paired). The first is to type our x and y variables in as we did in the correlation function above. 
 ```{r}
+summary(as.factor(smh$extracurricularInvolvement))
+highLowInvolvement<- smh |> filter(extracurricularInvolvement=="Low" |extracurricularInvolvement=="High")
+#t.test(grp1, grp2, var.equal=TRUE, alternative )
 
 ```
 You'll notice that the top of the t-test output says "Welch's Two sample t-test." This R function automatically assumes that the variances of each group are unequal. If we wanted to run a traditional paired-samples t-test, we need to include another argument. 
@@ -184,13 +202,17 @@ we can type them in as a formula in R. Formulas typically take the form y ~ x. T
 `t.test(dependent variable ~ indepedent variable, data= dataframe)`
 
 ```{r}
-
+t.test(creditLoad ~ extracurricularInvolvement, data= highLowInvolvement, var.equal=TRUE, alternative="two.sided")
+cohen.d(creditLoad~extracurricularInvolvement, data=highLowInvolvement)
 ```
 If our data were dependent between observations, we'll run a paired samples t test. The code looks pretty similar to above, but we'll use an additional argument. 
 
 let's use the sleep datset as an example
 ```{r}
-
+data(sleep)
+sleepWide<- pivot_wider(sleep, id_cols= ID, names_from= group, values_from= extra,names_prefix = "group")
+t.test(sleepWide$group1, sleepWide$group2, paired=TRUE, alternative="two.sided")
+cohen.d(sleepWide$group1, sleepWide$group2, paired=TRUE)
 ```
 
 Finally, we some times run one tailed vs two tailed tests, just like we did with the correlations. 
@@ -198,22 +220,24 @@ Finally, we some times run one tailed vs two tailed tests, just like we did with
 ##### Correlation and T-test practice
 1. Open the mtcars dataset. Find the correlation between mpg and hp
 ```{r}
-
+data(mtcars)
+cor(mtcars$mpg, mtcars$hp)
+cor.test(mtcars$mpg, mtcars$hp)
 ```
 
 2. Conduct a significance test to determine if displacement and miles per gallon significantly correlated. 
 ```{r}
-
+cor.test(mtcars$disp, mtcars$mpg)
 ```
 
 3. Conduct a two-tailed t-test examining whether the average mpg differs by transmission (am). 
 ```{r}
-
+t.test(mpg ~ am, data=mtcars)
 ```
 
 4. Conduct a one-tailed t-test examining whether the average displacement(disp) differs engine shape (vs). Specifically, test whether straight engines result in higher displacements.
 ```{r}
-
+t.test(disp~ vs, data=mtcars, alternative= "less")
 ```
 
 
@@ -221,32 +245,35 @@ Finally, we some times run one tailed vs two tailed tests, just like we did with
 Back to the student mental health Dataset we made. The code for a linear regression is really similar (ie identical)  to what we used for t-tests.
 `lm(DV ~ IV, data)`
 ```{r}
-
+lm1<- lm(creditLoad~ sleepQuality, data=smh)
 ```
 I tend to save my linear models because it allows me to do a few useful things:
 Just like we used   `summary()` to get a summary of our data, we can use the same function to learn more about our models
 ```{r}
-
+summary(lm1)
 ```
 `str()` is a function that allows us to learn about the structure of our model. We can use this to get specific pieces of information, or additional information that "underlies" our model (eg residuals and fitted values)
 ```{r}
-
+str(lm1)
 ```
 
 **Multiple Regression**
 We can include additional factors and interaction terms to our models: 
 
 ```{r}
-
+lm2<- lm(creditLoad ~ sleepQuality + stressLevel, data=smh)
+summary(lm2)
 ```
 Using * instead of + will include both the individual predictors AND their interactions
 ```{r}
-
+lm3<- lm(creditLoad~ sleepQuality * stressLevel, data=smh)
+summary(lm3)
 ```
  
 The : can be used instead of + to include an interaction in your model
 ```{r}
-
+lm4<- lm (creditLoad ~ sleepQuality + stressLevel+ sleepQuality:stressLevel, data=smh)
+summary(lm4)
 ```
 
 **Important:**The class of our data and the way data are entered matter for regression models. 
@@ -258,29 +285,37 @@ We may also need to change the reference level for factors.
 There are several ways you can get Anova results in R. There are differences in the ways that they handle interactions, but they are used in the same way. We can use `aov()`, `anova()`, and `Anova()`
 
 ```{r}
-
+aov1<- aov(creditLoad~ sleepQuality, data=smh)
+summary(aov1)
+library(car)
+Anova(lm1)
 ```
 
  more predictors!
 ```{r}
-
+Anova(lm3)
+a2<- aov(creditLoad~ sleepQuality *stressLevel, data=smh)
+summary(a2)
 ```
  
 #### Regression and ANOVA practice
 1. Use the mtcars dataset and create a linear model that predicts mpg from cylinder (cyl) and displacement. Print the results
 
 ```{r}
-
+lm5<- lm(mpg ~ cyl + disp, data=mtcars)
+summary(lm5)
 ```
 
 2. Create the same model, but include an interaction term. 
 ```{r}
-
+lm6<- lm(mpg~cyl*disp, data=mtcars)
+summary(lm6)
 ```
 
 3. Run an ANOVA predicting hp from the transmission variable. 
 ```{r}
-
+Anova(lm(hp~am, data=mtcars))
+a3<- aov(hp~am, data=mtcars)
 ```
 
 ###Learning Outcome 3: Nonparametric analyses in R
@@ -289,22 +324,32 @@ Nonparametric analyses are run similarly to their parametric versions. In the in
 **biserial correlations**
 Biserial correlations involve a binary outcome and a continuous variable. To run one in R, we need the ltm package. 
 ```{r}
+library(ltm)
 
 ```
 the function is `biserial.cor(continuous, binary)`. going to use it to see the relationship between sleep quality and anxietyscore
 
 ```{r}
 
+biserial.cor(highLowInvolvement$creditLoad, highLowInvolvement$extracurricularInvolvement,level = 1)
 ```
 Mathematically, this is the same as the pearson's version. 
 ```{r}
+highLowInvolvement$extracurricularInvolvement2<- as.factor(highLowInvolvement$extracurricularInvolvement)
 
+levels(highLowInvolvement$extracurricularInvolvement2)<- c(1,0)
+
+highLowInvolvement$extracurricularInvolvement2<- 
+as.numeric(levels(highLowInvolvement$extracurricularInvolvement2)[highLowInvolvement$extracurricularInvolvement2])
+
+cor(highLowInvolvement$creditLoad, highLowInvolvement$extracurricularInvolvement2)
 ```
 
 **spearman's rho**
 We can calculate spearman's rho and kendall's tau the same way. We just need to use the "method" argument for `cor.test()`. Correlations we can run with ordinal data
 ```{r}
-
+cor.test(smh$depressionScore, smh$stressLevel, method="spearman")
+cor.test(smh$depressionScore, smh$stressLevel, method="kendall")
 ```
 
 
@@ -312,7 +357,7 @@ We can calculate spearman's rho and kendall's tau the same way. We just need to 
 This is the nonparametric version of the t-test. It has the same arguments. We'll do one as an example. 
 `wilcox.test()`
 ```{r}
-
+wilcox.test(stressLevel~ extracurricularInvolvement, data=highLowInvolvement)
 ```
 
 **chi squared tests** 
@@ -324,7 +369,9 @@ chi squared tests compare observed frequencies versus expected frequencies
 chisquare goodness of fit test allows us to answer this question. to do this, we're going to use the function `chisq.test()`
 
 ```{r}
-
+frequency<- c(80, 108,112,126,77,81)
+prob<-c(.17, .17,.17,.17,.16,.16)
+chisq.test(frequency, p=prob)
 ```
 
 **binomial tests**
@@ -332,18 +379,18 @@ We use binomial tests to determine if something happens more often than chance. 
 `binom.test(successes, totalScores, probability)`
 
 ```{r}
-
+binom.test(10, 20, p= .25)
 ```
 
 for instance, if we have 10 true/false statements, and get 6 right. Does this differ from chance? 
 ```{r}
-
+binom.test(6,10, .5)
 ```
 This is a two-tailed test, but can also do one tailed by specifying the alternative. 
 
 20 questions, 5 choices, and want to know probability of getting 14 correct
 ```{r}
-
+binom.test(14,20,.2)
 ```
 
 
