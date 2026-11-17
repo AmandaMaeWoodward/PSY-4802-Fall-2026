@@ -5,26 +5,79 @@ date: "2026-11-17"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+some of the additional stats we'll need: 
+ - moderation
+ - mediation 
+ - logistic regression 
+ - linear mixed effects models 
+ - k means cluster analysis
+ 
+ 
+# moderation
+This is a type of analysis where a variable (third variable) affects the strength of the relationship between two other variables (outcome and predictor).
+
+lm(outcome ~ predictor* moderator, data= dat)
+
+```{r}
+library(tidyverse)
+data(starwars)
+
 ```
 
-## R Markdown
+## Question: Does sex moderate the relationship between height and mass? 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r}
+lm1<- lm(mass ~ height * sex, data= starwars)
+summary(lm1)
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r}
+library(ggeffects)
+a<- ggpredict(lm1, terms= c("sex"))
+plot(a)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Question2: Does birth year moderate the relationship between mass and height? 
+```{r}
+lm2<- lm(mass~ height* birth_year, data=starwars)
+summary(lm2)
+```
+
+```{r}
+b<- ggpredict(lm2)
+plot(b)
+library(interactions)
+interact_plot(lm2, pred= height, modx= birth_year)
+```
+
+# mediation
+the way that x and y are related is through a third variable (the mediator)
+
+```{r}
+library(mediation)
+```
+
+Mediation occurs when there is seemingly a relationship between x and y. In reality x predicts a mediator that in turn predicts y. This is often used when discussing mechanisms. There are different ways to do a mediation analysis. Baron and Kenny is a traditional approach, but has some issues. 
+
+Preacher and Hayes created a new approach that removes some of the issues with Baron and Kenny. This is shown in the mediator package. 
+need to create two models: 
+1) predict the mediator from x
+2) predict y from x and the mediator 
+
+## Question: Does birth_year mediate the relationship between height and mass? 
+```{r}
+starwars2<- na.omit(starwars)
+lma<- lm(birth_year ~ height, data=starwars2)
+summary(lma)
+lmb<- lm(mass ~ birth_year+height, data=starwars2)
+summary(lmb)
+med<-mediate(lma, lmb, treat= "height", mediator= "birth_year")
+summary(med)
+```
+Interpretation: 
+Total Effect: tells relationship between x and y (indirect and direct effect)
+ADE: tells about whether there is a direct effect between x and y
+ACME: tells use where the relationship is mediated 
+
+# logistic regression 
+linear regression with a dichotomous outcome 
