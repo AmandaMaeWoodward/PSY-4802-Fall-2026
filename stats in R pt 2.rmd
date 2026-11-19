@@ -10,7 +10,7 @@ some of the additional stats we'll need:
  - mediation 
  - logistic regression 
  - linear mixed effects models 
- - k means cluster analysis
+
  
  
 # moderation
@@ -81,3 +81,45 @@ ACME: tells use where the relationship is mediated
 
 # logistic regression 
 linear regression with a dichotomous outcome 
+glm(outcome ~ predictor, data= dat, family= "binomial")
+
+```{r}
+data(mtcars)
+summary(glm(am ~ mpg, data=mtcars))
+```
+
+# linear mixed effects models / repeated measures 
+
+## repeated measures ANOVA
+
+repeated measures anova can be used when we have an outcome that is measured at multiple time points 
+```{r}
+data(sleep)
+# a1<- aov(extra ~ group + ID, data=sleep) this works, but not totally correct
+a2<- aov(extra~ group + Error(ID), data=sleep)
+summary(a2)
+```
+
+
+```{r}
+library(ez)
+ezANOVA(sleep, dv= extra, wid= ID, within= group)
+```
+
+## linear mixed effects modeling 
+
+```{r}
+library(lme4)
+library(lmerTest)
+```
+
+use lmer() to create mixed effect model
+include (slope | intercept) in the model 
+- (1| variable) indicates a random intercept, where participants may have different starting points
+- if you replace the one with a second variable, it indicates a random slope, where rate of change may differ across participants 
+```{r}
+data("ChickWeight")
+
+lmer(weight ~ Diet + (Time|Chick),data=ChickWeight)
+```
+
