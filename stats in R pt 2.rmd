@@ -120,6 +120,10 @@ include (slope | intercept) in the model
 ```{r}
 data("ChickWeight")
 
-lmer(weight ~ Diet + (Time|Chick),data=ChickWeight)
+lme1<- lmer(weight ~ Diet + (Time|Chick),data=ChickWeight)
+summary(lme1)
 ```
 
+## generalized linear mixed effect models ( glmer)
+glmer(dv~ IV +(slope|intercept), data= dataframe, family= "")
+- family options include binomial (dichotomous data), poisson (count data), and several others 
