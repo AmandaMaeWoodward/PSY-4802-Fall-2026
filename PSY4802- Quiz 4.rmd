@@ -1,0 +1,126 @@
+---
+title: "Quiz 4"
+author: "Amanda Mae Woodward"
+date: "2026-11-24"
+output: html_document
+---
+
+Instructions: Fix the code below so that all code runs and you can knit your file. 
+
+1. 
+```{r}
+ggplot(penguins, aes(bill_len, bill_dep, color=island))+geom_point()+scale_fill_viridis(option="mako", discrete=TRUE)+theme(legend.position="top")
+```
+
+2. load the penguins data set from R and create a scatter plot with a regression line that includes the variables sex and bill length and change the shape of each data point
+```{r}
+ggplot(penguins, aes(bill_depth_mm, bill_length_mm, color = sex))+geom_point(data_point = 4)+
+  geom_smooth(penguins, aes(bill_depth_mm, bill_length_mm, color = sex), lm = TRUE)
+2. note: you all should have access to spotify data from a prior assignment. 
+```
+
+3.
+```{r}
+library(readr)
+spotifyDat <- read_csv("spotifyDat Fall26.csv")
+
+spotifyDatWide <- pivot_wider(spotifyDat, id_cols = c("artist"), names_from="song", values_from="song") 
+
+```
+
+4. 
+```{r}
+ggplot(spotifyDat_Fall26, aes(as.factor(artist), fill = as.factor(artist)))+ geom_bar(color= "black")+ theme(axis.text.x = element_text(angle = 90, size = 4))+ labs(x= "Artist", y= "Number of Songs", title= "Artsist's Number of Songs")
+```
+
+5.
+
+```{r}
+ggplot(spotifyDat, aes(popularity, tempo, fill = danceability)) + geom_point() + scale_fill_viridis()
+```
+
+6. 
+```{r}
+Makes new column in mtcars dataset that distinguishes if a car is fuel efficient or not
+
+view(mtcars)
+for (car in mtcars) {
+  if (car$mpg > 20) {
+    mtcars$fuelEfficient[car] = "Yes"
+   else {
+    mtcars$fuelEfficient = "No"
+  }
+  print(mtcars$fuelefficient)
+}
+```
+
+7.create a facet wrap graph to generate a scatterplot of mpg and hp based on the number of cylinders a car has
+```{r}
+(mtcars)
+ggplot(mtcars,aes(mpg,hp,color,(gear))) + geom_point() + theme_minimal() + facet_wrap(gear) 
+```
+
+8.
+```
+ggplot(mtcars, aes(mpg, hp))+geom_bar()
+```
+
+9. scenario: Change the column names of the sleep dataset.
+```{r}
+data(sleep)
+colnames(sleep)[,1]<- "extra sleep"
+```
+
+10. Create a bar graph seperated and fully colored in by gender
+
+```{r}
+ggplot(starwars, aes(eye_color, color=gender))+geom_bar()+theme(axis.text.x = element_text(angle = 90))+facet_wrap(gender)
+```
+
+11.
+```{r}
+starwars %>% summary(meanMass = mean(mass), medianMass = median(Mass) modeMass = mode(mass)))
+```
+
+12.
+```{r}
+```{r}
+ggplot(starwars, aes(x = height, y = mass, color = species)) +
+  geom_point() +
+  scale_fill_viridis(discrete = TRUE, option = "floral," name = "species ")
+```
+
+13. Create and save a function that divides all numbers in a column by 10. Test it on the starwars mass column.
+```{r}
+divByTen<- function(number){number/10}
+starwars$mass<- divByTen
+```
+
+14.
+```{r}
+avgmass <- mean(starwars$mass)
+avgmass
+```
+
+15.
+```{r}
+ggplot(diamond, aes(price, fill= cut))+ geom_point()
+
+```
+
+16.
+```{r}
+a1 <- Anova(cut ~ price x color, data = diamonds)
+summary(a1)
+```
+
+17.
+```{r}
+ChickWeightWide <- ChickWeightLong |> pivot_wider(id_cols=c("Chick", "Diet"), names_to = "Time", values_to = "Weight", names_prefix = "Day")
+
+```
+
+18.
+```{r}
+billboard |> seperate(date.entered, into=c("year", "month", "day"), sep="_")
+```
